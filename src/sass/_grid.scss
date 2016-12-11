@@ -1,0 +1,53 @@
+//---------------------------------------------------------
+// Grid for IXMaps website redesign
+//---------------------------------------------------------
+
+@import "neat-helpers";
+
+@mixin build-columns($bp: '') {
+	@if ($bp != '') {
+		$bp: "-#{$bp}";
+	}
+	@for $i from 1 through $grid-columns {
+		.col#{$bp}-#{$i} {
+			@include span-columns($i);
+		}
+		@if ($i < $grid-columns) {
+			.col#{$bp}-left-#{$i} {
+				@include shift($i);
+			}
+			.col#{$bp}-right-#{$i} {
+				@include shift(-$i);
+			}
+		}
+	}
+}
+
+// Media Query Breakpoints
+$mobile:  new-breakpoint(max-width 544px 2);
+$small:   new-breakpoint(min-width 545px max-width 767px);
+$medium:  new-breakpoint(min-width 768px max-width 1023px);
+$default: new-breakpoint(min-width 1024px);
+
+.container {
+	@include outer-container($max-width);
+}
+.row {
+	@include row;
+}
+.cf {
+	@include clearfix;
+}
+
+@include media($mobile) {
+	@include build-columns('mob');
+}
+@include media($small) {
+	@include build-columns('sm');
+}
+@include media($medium) {
+	@include build-columns('md');
+}
+@include media($default) {
+	@include build-columns;
+}

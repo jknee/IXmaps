@@ -65,10 +65,11 @@ Temporary Items
 ### grunt ###
 # Grunt usually preprocesses files such as coffeescript, compass... inside the .tmp directory
 .tmp/
+node_modules/
 
 
 ### Bower ###
-bower_components
+bower_components/
 .bower-cache
 .bower-registry
 .bower-tmp

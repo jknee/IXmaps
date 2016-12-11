@@ -1,0 +1,236 @@
+
+
+.padding{
+  padding: 0 20px
+}
+
+// Outer navigation wrapper
+.navigation {
+  height: $nav-height;
+  background: $nav-background;
+  box-shadow: 0 2px 20px rgba(0,0,0,.20)
+}
+
+// Logo and branding
+.header-logo {
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 10px;
+  float: left;
+  line-height: $nav-height;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  a,
+  a:visited {
+    color: $nav-font-color;
+    text-decoration: none;
+  }
+}
+
+// Container with no padding for navbar
+.nav-container {
+  margin: 0 auto;
+}
+
+// Navigation
+nav {
+  float: right;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+      position: relative;
+      display: inline-block;
+      padding: 30px 0 20px;
+      vertical-align: middle;
+      a,
+      a:visited {
+        position: relative;
+        display: block;
+        padding: 4px 0;
+        margin: 0 16px;
+        letter-spacing: .1rem;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+        font-family: 'Work Sans';
+        text-transform: uppercase;
+        vertical-align: text-top;
+        -webkit-transition: color 0.1s,background-color 0.1s,padding 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        transition: color 0.1s,background-color 0.1s,padding 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        color: $nav-font-color;
+        text-decoration: none;
+        }
+      a:hover {
+        color: $nav-font-color;
+      }
+    }
+  }
+}
+
+nav ul li a:hover:after,
+nav ul li a:focus:after,
+nav ul li a:active:after {
+  width: 100%;
+}
+nav ul li a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 3px;
+  background-color: $nav-font-color;
+  width: 0;
+  -webkit-transition: width .4s;
+  transition: width .4s;
+}
+
+/* Mobile navigation */
+
+// Binds to JS Toggle
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $nav-background;
+  height: $nav-height;
+  width: $nav-height;
+}
+@media only screen and (max-width: $breakpoint) {
+  // Hamburger nav visible on mobile only
+  .nav-mobile {
+    display: block;
+  }
+  nav {
+   width: 100%;
+    padding: $nav-height 0 15px;
+    ul {
+      display: none;
+      li {
+        float: none;
+        a {
+          padding: 15px;
+          line-height: 20px;
+        }
+        ul li a {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+  .nav-dropdown {
+    position: static;
+  }
+}
+@media screen and (min-width: $breakpoint) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 22px;
+  top: 28px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+  span,
+  span:before,
+  span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: $nav-font-color;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+  }
+  span:before {
+    top: -10px;
+  }
+  span:after {
+    bottom: -10px;
+  }
+  &.active span {
+    background-color: transparent;
+    &:before,
+    &:after {
+      top: 0;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+//Footer
+footer {
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border-top: 2px solid #eeeeee
+}
+
+
+.footer-links{
+  height: 140px;
+  line-height: 140px
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+    li {
+    float: left;
+  }
+}
+
+.footer-links ul li a {
+  padding: 8px;
+  margin: 0 16px;
+  color: $nav-font-color;
+  font-weight: 700;
+  font-family: 'Work Sans', sans-serif;
+  text-decoration: none;
+    &:hover{
+      background: #eeeeee;
+    }
+}
+
+
+.social-links img {
+  display: block;
+  margin: 0 auto 0.25em;
+}
+
+.social-links li {
+  text-align: center;
+  margin: 38px 16px 8px;
+}
+
+
+.social-links a {
+  font-size: 14px;
+  color: $nav-font-color;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+    &:hover{
+      background: #eeeeee;
+    }
+}
+
+.footer-copyright {
+  color: #666666;
+  border-top: 2px solid #eeeeee;
+  padding: 20px 0
+}
