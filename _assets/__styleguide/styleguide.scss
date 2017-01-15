@@ -1,0 +1,84 @@
+//---------------------------------------------------------
+// Main Stylesheet
+//---------------------------------------------------------
+
+// Imports
+@import "../sass/variables";
+@import '../sass/sassylists';
+@import '../sass/functions';
+@import '../sass/mixins';
+@import "../sass/reset";
+@import "../sass/bourbon";
+@import "../sass/neat";
+@import "../sass/grid";
+@import "../sass/typography";
+@import "../sass/navigation";
+
+
+
+
+body {
+    background: $page;
+    margin: 0;
+    box-sizing: border-box;
+    min-width: $min-width;
+}
+
+
+.hero{
+  width: 100%;
+  height: 250px;
+  background: $grey_dark;
+    h1{
+    line-height: 250px;
+    }
+}
+
+
+.jumbo-hero{
+  text-align: center;
+  width: 100%;
+  height: 600px;
+  color: #fff;
+  background:
+    /* top, transparent red */
+    linear-gradient(
+      rgba(0, 129, 194, 0.7),
+      rgba(0, 71, 138, 0.7)
+    ),
+    /* bottom, image */
+    url('/_assets/img/electronics-board.jpg');
+}
+
+
+.theme-box {
+  display:block;
+  padding: 16px 32px;
+  margin: 20px 0;
+  background: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1px solid #EAEAEA;
+  box-shadow: 0 0 10px rgba(0,0,0,.20)
+}
+
+.theme-box:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,.50);
+    border-color: $ixblue
+}
+
+
+.colour-block{ height: 100px; border: 8px solid #ffffff}
+
+.ixblue{background-color: $ixblue}
+.ixred{ background-color: $ixred}
+
+.green{ background-color: $green}
+.green_light{ background-color: $green_light}
+.skyblue{ background-color: $skyblue}
+.yellow{ background-color: $yellow}
+
+.grey_dark{ background-color: $grey_dark}
+.grey{ background-color: $grey}
+.grey_light{ background-color: $grey_light}
+.page{ background-color: $page}

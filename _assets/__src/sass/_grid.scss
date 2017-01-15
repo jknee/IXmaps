@@ -1,0 +1,56 @@
+//---------------------------------------------------------
+// Grid Structure
+//---------------------------------------------------------
+
+@import "neat-helpers";
+
+// Media Query Breakpoints
+$mobile:  new-breakpoint(max-width $mobile-max 2);
+$small:   new-breakpoint(min-width $small-min max-width $small-max);
+$medium:  new-breakpoint(min-width $medium-min max-width $medium-max);
+$default: new-breakpoint(min-width $default-min);
+
+.content {
+	@include outer-container($max-width);
+
+	padding-left: $baseline * 3;
+	padding-right: $baseline * 3;
+	@include media( new-breakpoint(max-width $small-max) ) {
+		padding-left: $baseline * 2;
+		padding-right: $baseline * 2;
+	}
+	@include media($mobile) {
+		padding-left: $baseline * 2;
+		padding-right: $baseline * 2;
+	}
+}
+
+.row {@include row;}
+.cf {@include clearfix;}
+
+
+// @mixin build-columns($bp: '') {
+// 	@if ($bp != '') {
+// 		$bp: "-#{$bp}";
+// 	}
+// 	@for $i from 1 through $grid-columns {
+// 		.col#{$bp}-#{$i} {
+// 			@include span-columns($i);
+// 		}
+// 		@if ($i < $grid-columns) {
+// 			.col#{$bp}-left-#{$i} {
+// 				@include shift($i);
+// 			}
+// 			.col#{$bp}-right-#{$i} {
+// 				@include shift(-$i);
+// 			}
+// 		}
+// 	}
+// }
+
+// @include media($mobile) {@include build-columns('mob');}
+// @include media($small) {@include build-columns('sm');}
+// @include media($medium) {@include build-columns('md');}
+// @include media($default) {@include build-columns;}
+
+

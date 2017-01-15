@@ -1,0 +1,85 @@
+.issue-summary-holder{
+  background: $page;
+  padding: $baseline*6 0;
+  text-align: center
+}
+
+.issue-summary{
+  @include span-columns(8);
+  @include shift(2);
+}
+
+.issue{
+  border: 1px solid #EAEAEA;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,.20);
+  font-size: 24px;
+  text-align: left;
+  text-decoration: none;
+  padding: 16px 32px;
+  margin: $baseline*2 0;
+  background: #ffffff;
+}
+
+.issue-item:hover .issue{
+    box-shadow: 0 0 10px rgba(0,0,0,.50);
+    border-color: $ixblue
+}
+
+.issue{
+  display: flex;
+  align-items: center;
+}
+.issue img{
+  float: right;
+  padding-right: 24px;
+  margin-right: 24px;
+  border-right: 2px solid #eee;
+  width: 60px;
+  height: 60px;
+
+}
+
+
+
+
+
+
+
+#database-stats{
+  background: $grey_dark;
+  text-align: center;
+  padding: $baseline*8 0;
+}
+
+#database-stats h4, h6{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 $baseline 0;
+}
+#database-stats h4{
+  font-size: 30px;
+  margin-bottom: $baseline*6;
+  color: $grey_light;
+}
+#database-stats h6{
+  font-size: 14px;
+  font-weight: 500;
+  color: $grey_light;
+}
+
+.stat{
+    @include span-columns(3);
+    padding: 0;
+    font-size: 30px;
+    color: $ixblue;
+    border-right: 2px dotted #444;
+}
+.stat:last-child{
+border-right: none;
+}
+
+
+

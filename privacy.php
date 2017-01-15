@@ -3,57 +3,40 @@
 <head>
     <meta charset="utf-8">
     <title>IXmaps</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Styles -->
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext" rel="stylesheet">
-
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="favicon.png">
-  </head>
+    <?php include '_includes/global-head.php'; ?>
+</head>
 
 <body>
 
-<?php include 'global-header.php'; ?>
+<?php include '_includes/global-navigation.php'; ?>
 
 <header class="container">
-<div class="row">
-<div class="col-6 col-left-3 col-md-8 col-md-left-2 col-sm-10 col-sm-left-1">
-    <h2>Privacy Policy</h2>
-</div>
-</div>
+    <div class="row">
+        <div class="col-6 col-left-3 col-md-8 col-md-left-2 col-sm-10 col-sm-left-1">
+            <h1>Privacy</h1>
+        </div>
+    </div>
 </header>
 
 <section class="container">
     <div class="row">
         <div class="col-6 col-left-3 col-md-8 col-md-left-2 col-sm-10 col-sm-left-1">
-            <p>This privacy policy outlines how we may collect your personal data as a visitor to our website. Through the IXmaps website and TRgen traceroute software, we collect the following information:</p>
+            <p>This privacy policy outlines how we may collect your personal data as a visitor to our website. Through the IXmaps website and IXmapsClient traceroute generation software, we record the following information:</p>
             <ul>
-                <li>E-mail addresses from those who send inquiries to the project. We will not share, sell, or distribute your e-mail address.</li>
-                <li>Usage statistics on our Web pages, page downloads, and search engine queries.</li>
-                <li>If you contribute to traceroutes, we anonymize your IP address by turning the last three digits into zeroes.</li>
+                <li>E-mail addresses from those who send inquiries to the project. We will not share, sell, or distribute your e-mail address</li>
+                <li>Anonymized usage statistics on our web pages, page downloads, and search engine queries. For this we use <a href="https://piwik.org/privacy/" target="_blank">Piwik</a> open-source, privacy-compliant web analytics</li>
+                <li>Anonymized IP addresses obtained when you conduct searches on the Map page or generate new traceroutes on the Contribute page. For this, we turn the last three digits, or octet, of the IP address into zeroes (e.g. 123.123.123.123 becomes 123.123.123.000)</li>
             </ul>
-            <p>You may contact us at any time to correct or change any personal data that we hold about you (for example, if you want to change your username). You may also ask to have all data related to your activity removed from our system. To do so, please email us.</p>
-            <p>This site is governed by the <a target="blank" href="https://www.fippa.utoronto.ca/">privacy policies of the University of Toronto</a>, and hence Ontario's <a target="blank" href="https://www.e-laws.gov.on.ca/html/statutes/english/elaws_statutes_90f31_e.htm">Freedom of Information and Protection of Privacy Act (FIPPA)</a>.</p>
+            <p>You may contact us at any time to correct or change any personal data that we hold about you (for example, if you want to change your username). You may also ask to have all data related to your activity removed from our system. To do so, please email us at <a href="mailto:ixmaps@utoronto.ca">ixmaps&commat;utoronto.ca</a>.</p>
+            <p>In the highly unlikely event that we receive a request for any personal information, we will make best efforts to notify those who may be affected. We will resist such a request without prior explicit approval of those whose data is requested. So far we have not received any such request.</p>
+            <p>This site is governed by the <a href="https://www.fippa.utoronto.ca/ " target="_blank">privacy policies of the University of Toronto</a>, and hence <a href="https://www.ontario.ca/laws/statute/90f31" target="_blank">Ontario's Freedom of Information and Protection of Privacy Act (FIPPA)</a>.</p>
+
+            <p><em>This privacy policy was last reviewed and updated on January 6, 2017.</em></p>
         </div>
     </div>
 </section>
 
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script>window.jQuery||document.write('<script src="js/jquery.min.js"><\/script>')</script>
-<script src="js/main.min.js"></script>
+<?php include '_includes/global-footer.php'; ?>
 
 </body>
 </html>
