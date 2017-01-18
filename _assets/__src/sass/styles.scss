@@ -90,3 +90,26 @@ h1{
     text-align: center;
     color: $white;
 }
+
+// 4. Block Elements
+.list-header{
+    margin-bottom: $baseline
+}
+article ul, article ol{
+    margin-left: 0;
+    list-style: none;
+}
+
+article ul li:before {
+    content: "• ";
+    color: $ixblue;
+}
+
+article ol {counter-reset: li}
+article ol li {counter-increment: li}
+article ol li::before {
+    content: counter(li) ". ";
+    color: $ixblue;
+}
+
+article li{ padding-bottom: $baseline}

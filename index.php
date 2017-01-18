@@ -13,7 +13,7 @@
     <div class="content">
         <h1>Map Your Internet</h1>
         <p class="intro">See how data travels across the internet <br> and the privacy risks it faces along the way</p>
-        <button class="ui huge black button">Start Mapping</button>
+        <button class="ui huge grey button">Start Mapping</button>
     </div>
 </header>
 

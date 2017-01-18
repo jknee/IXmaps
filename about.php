@@ -29,26 +29,26 @@
     <article>
         <h2>Project Team</h2>
         <ul>
-            <li><a href="http://current.ischool.utoronto.ca/faculty/andrew-clement" target="_blank">Andrew Clement</a>, PhD, Professor, Faculty of Information, University of Toronto</li>
-            <li><a href="http://www.linkedin.com/pub/colin-mccann/27/867/820" target="_blank">Colin McCann</a>, MI, Faculty of Information, University of Toronto</li>
-            <li><a href="http://current.ischool.utoronto.ca/students/antonio-gamba-bari" target="_blank">Antonio Gamba</a>, PhD Candidate, Faculty of Information, University of Toronto</li>
-            <li><a href="http://people.laps.yorku.ca/people.nsf/researcherprofile?readform&shortname=jaobar" target="_blank">Jonathan Obar</a>, PhD, Department of Communication Studies, York University</li>
-            <li>Dawn Walker, PhD Student, Faculty of Information, University of Toronto</li>
-            <li>Jennette Weber, Graphic Designer, Toronto</li>
+            <li><strong><a href="http://current.ischool.utoronto.ca/faculty/andrew-clement" target="_blank">Andrew Clement</a></strong>, PhD, Professor, Faculty of Information, University of Toronto</li>
+            <li><strong><a href="http://www.linkedin.com/pub/colin-mccann/27/867/820" target="_blank">Colin McCann</a></strong>, MI, Faculty of Information, University of Toronto</li>
+            <li><strong><a href="http://current.ischool.utoronto.ca/students/antonio-gamba-bari" target="_blank">Antonio Gamba</a></strong>, PhD Candidate, Faculty of Information, University of Toronto</li>
+            <li><strong><a href="http://people.laps.yorku.ca/people.nsf/researcherprofile?readform&shortname=jaobar" target="_blank">Jonathan Obar</a></strong>, PhD, Department of Communication Studies, York University</li>
+            <li><strong>Dawn Walker</strong>, PhD Student, Faculty of Information, University of Toronto</li>
+            <li><strong>Jennette Weber</strong>, Graphic Designer, Toronto</li>
         </ul>
 
         <h3>Former Members</h3>
         <ul>
-            <li><a href="http://www.vacuumwoman.com/" target="_blank">Nancy Paterson</a>, PhD, Associate Professor, OCAD University</li>
-            <li><a href="http://www.ischool.utoronto.ca/faculty/david-j-phillips" target="_blank">David J. Phillips</a>, PhD, Associate Professor, Faculty of Information, University of Toronto</li>
-            <li><a href="https://ca.linkedin.com/pub/lauren-dimonte/27/15/169" target="_blank">Lauren Di Monte</a>, MI, MA, Faculty of Information, University of Toronto</li>
-            <li>Alex Goel, MI, Faculty of Information, University of Toronto</li>
-            <li>Steve Harvey, Software Developer, Toronto</li>
-            <li>Yannet Lathrop, MI, Faculty of Information, University of Toronto</li>
-            <li>David Mason, Software Developer, Montreal</li>
-            <li><a href="https://www.ischool.utoronto.ca/students/gabby-resch" target="_blank">Gabby Resch</a>, PhD Candidate, Faculty of Information, University of Toronto</li>
-            <li><a href="https://www.linkedin.com/in/johnharrisstevenson" target="_blank">John Stevenson</a>, PhD, University of Toronto</li>
-            <li>Erik Stewart, Programmer, Toronto</li>
+            <li><strong><a href="http://www.vacuumwoman.com/" target="_blank">Nancy Paterson</strong></a>, PhD, Associate Professor, OCAD University</li>
+            <li><strong><a href="http://www.ischool.utoronto.ca/faculty/david-j-phillips" target="_blank">David J. Phillips</strong></a>, PhD, Associate Professor, Faculty of Information, University of Toronto</li>
+            <li><strong><a href="https://ca.linkedin.com/pub/lauren-dimonte/27/15/169" target="_blank">Lauren Di Monte</strong></a>, MI, MA, Faculty of Information, University of Toronto</li>
+            <li><strong>Alex Goel</strong>, MI, Faculty of Information, University of Toronto</li>
+            <li><strong>Steve Harvey</strong>, Software Developer, Toronto</li>
+            <li><strong>Yannet Lathrop</strong>, MI, Faculty of Information, University of Toronto</li>
+            <li><strong>David Mason</strong>, Software Developer, Montreal</li>
+            <li><strong><a href="https://www.ischool.utoronto.ca/students/gabby-resch" target="_blank">Gabby Resch</a></strong>, PhD Candidate, Faculty of Information, University of Toronto</li>
+            <li><strong><a href="https://www.linkedin.com/in/johnharrisstevenson" target="_blank">John Stevenson</a></strong>, PhD, University of Toronto</li>
+            <li><strong>Erik Stewart</strong>, Programmer, Toronto</li>
         </ul>
     </article>
 

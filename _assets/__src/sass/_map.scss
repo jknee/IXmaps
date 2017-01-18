@@ -1,36 +1,50 @@
+
+
 // Let's not make this page responsive, for now
 #map-page {
   min-width: 769px !important;
 }
 
+// Style the Tab Structure
 #search-header{
   margin: $baseline*4 auto;
 }
 
-.basic-search-item{
-  @include span-columns (3);
-  @include pad();
-}
-
-.input-summary{
-  height: 46px;
+#search-header .menu .item{
   background: $grey_light;
-  position: relative
+  color: $ixblue;
+  font-family: $WorkSans;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-right: 2px;
+  border-radius: 0;
 }
 
-.ui.button.basic-search-item{margin: 0}
-.ui.top.attached.label+[class*="right floated"]+*, .ui.top.attached.label:first-child+:not(.attached){
-  margin-top: 0!important;
+#search-header .menu .item.active{
+    background: $white;
+    color: $grey_dark;
+    border-top: 4px solid $grey;
+    border-radius: 0 !important;
 }
 
-.float-right{
-    margin-left: auto;
-    float: right;
-}
-
-.text-center{
+#search-header h3{
+  color: #grey;
+  font-size: 20px;
+  font-weight: 500;
+  margin: $baseline*2 0 $baseline*3 0;
   text-align: center;
 }
+
+.map-help{
+  margin-left: auto;
+  float: right;
+  & .button{
+      text-transform: uppercase;
+      letter-spacing: 1px;
+  }
+}
+
 
 // Layout of the Results Section
 .map-holder{
@@ -63,12 +77,78 @@
     -moz-box-shadow: -4px 0px 4px 0px rgba(0,0,0,0.2);
 }
 
-
-
-
-.ui.button.compact{
-  font-size: 11px;
+.header-results{
+  color: #grey;
+  font-size: 24px;
+  font-weight: 400;
+  padding: $baseline 0;
+  & em{
+  font-size: 14px;
+  }
 }
+
+.traceroutes-results,
+.carriers-results{
+  position: relative;
+  & h6{
+    float: left;
+  }
+  & button{
+  float: right;
+  }
+}
+
+.carrier-results{
+  padding: 16px 0;
+}
+.traceroutes-results h6,
+.carriers-results h6{
+  font-size: 16px;
+  font-weight: 600;
+  font-style: italic;
+  text-align: left;
+  letter-spacing: 0;
+  text-transform: none;
+  color: $grey;
+}
+
+.ui.visible.right.overlay.sidebar{
+  width: 500px !important;
+}
+
+
+#map-page table{
+  font-size: 14px;
+  th {
+    padding: 4px 8px;
+    color: $grey;
+  }
+  tr{
+    padding: 8px;
+  }
+}
+
+  .ui.compact.table tr.carrier td {
+    padding-left: 8px;
+  &:first-child{
+    padding-left: 16px;
+    margin-left: 0;
+    position: relative;
+  }
+}
+
+.carrier-colour{
+  width: 8px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #eee;
+}
+
+.bell{ background: maroon;}
+.shaw { background: olive; }
+.rogers { background: teal; }
 
 
 
@@ -76,47 +156,132 @@
   font-size: 14px;
 }
 
-th:after {
-    content: "  \25E6";
-}
-
-th.sorted.ascending:after {
-    content: "  \25E6";
-}
-
-th.sorted.descending:after {
-    content: " \25E6";
+.ui.compact.buttons .button,
+.ui.compact.button {
+  text-transform: uppercase !important;
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: $WorkSans;
 }
 
 
-.query-line {
+.map-canvas{
+  position: relative;
+}
+.layers-toggle{
+  position: absolute;
+  top: $baseline;
+  right: 0;
+  z-index: 2;
+}
+
+
+
+/* tables */
+
+table.tablesorter thead tr .header {
+  background-image: url(../img/icn-bg.gif);
+  background-repeat: no-repeat;
+  background-position: center right;
+  cursor: pointer;
+}
+table.tablesorter thead tr .headerSortUp {
+  background-image: url(../img/icn-asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+  background-image: url(../img/icn-desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #eaeaea;
+}
+
+.searchsettings,
+.input-holder {
+  @include span-columns(12);
+  position: relative;
+}
+
+
+
+/*// 1. Quick Search*/
+
+.quick-input{
+  @include span-columns(2 of 12);
   padding: 0;
-  margin: 0;
-  list-style: none;
+}
+.quick-input .button{
+  height: 80px;
+  margin-bottom: $baseline*4;
+}
 
-  -ms-box-orient: horizontal;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
+
+/*// 2. Basic Search*/
+.basic.input-holder{
   display: flex;
-
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-align-items: stretch;
+  flex-flow: row;
   align-items: stretch;
 }
 
-.advanced-input{padding: 0 8px;}
-.advanced-input:nth-of-type(1){
+a.basic-srch-itm{ margin: 0 8px;}
+
+a.basic-srch-itm:nth-of-type(1){
+  flex-grow: 4;
+}
+
+a.basic-srch-itm:nth-of-type(2){
+  flex-grow: 4;
+}
+a.basic-srch-itm:nth-of-type(3){
+  flex-grow: 4;
+}
+a.basic-srch-itm:nth-of-type(4){
   flex-grow: 1;
 }
 
+.input-summary{
+  padding: 4px 8px 0 16px;
+  background:$grey_light;
+  border: 1px solid $grey_light;
+  height: 60px;
+}
+
+.basic-srch-itm:hover .input-summary{
+  border-color: $grey;
+  box-shadow: 0 4px 6px $grey_light;
+  }
+
+.huge.button {
+  height: 60px;
+}
+
+.input-summary .label{
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.input-summary{
+  line-height: 24px;
+   color: $grey_dark;
+}
+
+
+// 3. Advanced Search
+
+.advanced.input-holder{
+  display: flex;
+  flex-flow: row;
+
+}
+.advanced-input{padding: 0 8px;}
+.advanced-input:nth-of-type(1){
+  flex-grow: .75;
+}
+
 .advanced-input:nth-of-type(2){
-  flex-grow: 2;
+  flex-grow: 1;
 }
 
 .advanced-input:nth-of-type(3){
@@ -124,16 +289,21 @@ th.sorted.descending:after {
 }
 
 .advanced-input:nth-of-type(4){
-  flex-grow: 2;
+  flex-grow: 3;
 }
 
 .advanced-input:nth-of-type(5){
   flex-grow: 1;
 }
 .advanced-input:nth-of-type(6){
-  flex-grow: 0;
+  flex-grow: .5;
 }
 .advanced-input:nth-of-type(7){
-  flex-grow: 1;
+  flex-grow: .5;
 }
 
+
+
+.ui.form .inline.field > label {
+    width: 100px;
+}

@@ -10,230 +10,70 @@
 <?php include '_includes/global-navigation.php'; ?>
 
 <!-- SEARCH AREA -->
-<section id="search-header">
-<div class="content">
-
-  <!-- Search Tabs -->
-  <div class="ui top attached tabular menu">
-    <a class="item" data-tab="quick">Quick</a>
-    <a class="item active" data-tab="basic">Basic</a>
-    <a class="item" data-tab="advanced">Advanced</a>
-
-    <div class="float-right">
-      <button class="ui primary basic button">Help</button>
-    </div>
-  </div>
-
-  <!-- Tab 1 Contents: Quick Search -->
-  <div class="ui bottom attached tab segment content" data-tab="quick">
-    <h3 class="ui header text-center">Select a quick search to view traceroutes in the IXmaps database.</h3>
-    <div class="text-center">
-      <button class="large ui button">Last Contibuted</button>
-      <button class="large ui button">Via NSA City</button>
-      <button class="large ui button">Boomerangs</button>
-      <button class="large ui button">From My ISP</button>
-      <button class="large ui button">From My City</button>
-      <button class="large ui button">From My Country</button>
-    </div>
-    <hr>
-    <div>
-      <p class="minor">
-        <strong>Search Query:&#8196;</strong>
-        <span>Does Originate in AS number 814</span>
-        <a href="#">&#8195;[ Refine in Advanced Search ]</a>
-      </p>
-    </div>
-  </div>
-
-  <!-- Tab 2 Contents: Basic Search -->
-  <div class="ui bottom attached tab segment active content" data-tab="basic">
-    <h3 class="ui header text-center">Enter Search Terms to Find Traceroutes in the IXmaps Database</h3>
-    <div>
-
-
-      <div class="basic-search-item  input-summary">
-        <div class="ui top attached label">FROM</div>
-        <div class="basic-search">–––</div>
-      </div>
-      <div class="basic-search-item input-summary">
-        <div class="ui top attached label">VIA</div>
-        <div>–––</div>
-      </div>
-      <div class="basic-search-item input-summary">
-        <div class="ui top attached label">TO</div>
-        <div>–––</div>
-      </div>
-      <button class="ui large button basic-search-item">Search</button>
-    </div>
-  </div>
-
-  <!-- Tab 3 Contents: Advanced Search -->
-  <div class="ui bottom attached tab segment" data-tab="advanced">
-    <h3 class="ui header text-center">Construct a custom query to search the IXmaps database</h3>
-    <div class="query-line">
-      <!-- Does Not -->
-      <div class="advanced-input">
-      <select class="ui fluid dropdown">
-        <option value="1">Does Not</option>
-        <option value="0">Does</option>
-      </select>
-      </div>
-
-      <!-- Terminate -->
-      <div class="advanced-input">
-      <select class="ui fluid dropdown">
-        <option value="1">Terminates In</option>
-        <option value="0">Does</option>
-      </select>
-      </div>
-
-      <!-- Destination -->
-      <div class="advanced-input">
-      <select class="ui fluid dropdown">
-        <option value="1">Destination Hostname</option>
-        <option value="0">Does</option>
-      </select>
-      </div>
-
-      <!-- Input -->
-      <div class="advanced-input">
-      <div class="ui large fluid input">
-        <input type="text" placeholder="Host Name">
-      </div>
-      </div>
-
-      <!-- And -->
-      <div class="advanced-input">
-      <select class="ui fluid dropdown">
-        <option value="1">And</option>
-        <option value="0">Or</option>
-      </select>
-      </div>
-
-      <!-- ADD -->
-      <button class="circular ui icon button">
-        <i class="icon settings"></i>
-      </button>
-
-      <!-- DELETE -->
-      <button class="circular ui icon button">
-        <i class="icon settings"></i>
-      </button>
-    </div>
-
-    <div class="search-line">
-      <hr>
-
-      <button class="ui primary basic button ">
-      Settings
-      </button>
-
-      <button class="ui primary button float-right">
-        Search
-      </button>
-
-      <button class="ui secondary button float-right">
-        Clear
-      </button>
-    </div>
-
-  </div>
-
-</div>
-</section>
+<?php include '_includes/map-search.php'; ?>
 
 <!-- RESULTS AREA -->
 <div class="map-holder">
-  <div class="results">
 
-  <header id="header" class="">
-    <h2>Z Traceroutes Found <br>
-    Displaying X of Y most recent search results</h2>
-  </header><!-- /header -->
+    <!-- LEGEND SIDEBAR -->
+    <?php include '_includes/map-legend.php'; ?>
 
+    <!-- RESULTS SIDEBAR -->
+    <?php include '_includes/map-results.php'; ?>
 
-    <h6>Tracerouts</h6>
-    <button class="ui compact inverted button">Map All</button>
-    <button class="ui compact inverted button">Hide All</button>
-
-    <table class="ui sortable celled unstackable selectable table">
-    <thead><tr>
-      <th class="sorted ascending">Origin</th>
-      <th class="sorted ascending">Destination</th>
-      <th class="sorted ascending">TR ID</th>
-    </tr></thead>
-
-    <tbody>
-      <tr class="selectable">
-        <td><i class="canada flag"></i>Toronto</td>
-        <td>www.website.com</td>
-        <td>4263</td>
-      </tr>
-      <tr class="selectable">
-        <td><i class="canada flag"></i>Toronto</td>
-        <td>www.website.com</td>
-        <td>4263</td>
-      </tr>
-      <tr class="selectable">
-        <td><i class="america flag"></i>New York</td>
-        <td>www.website.com</td>
-        <td>4263</td>
-      </tr>
-    </tbody>
-    </table>
-
-
-    <h6>Carriers</h6>
-
-    <table class="ui sortable celled minor table">
-    <thead><tr>
-      <th class="sorted ascending">Carrier</th>
-      <th class="sorted ascending">Nat.</th>
-      <th class="sorted ascending">Routers</th>
-      <th class="sorted ascending">Transparency</th>
-    </tr></thead>
-
-    <tbody>
-      <tr>
-        <td>Shaw</td>
-        <td><i class="canada flag"></i></td>
-        <td>4</td>
-        <td><div class="ui mini star rating" data-rating="2" data-max-rating="10""></div></td>
-      </tr>
-      <tr>
-        <td>Rogers</td>
-        <td><i class="canada flag"></i></td>
-        <td>2</td>
-        <td><div class="ui mini star rating" data-rating="3" data-max-rating="10"></div></td>
-      </tr>
-      <tr>
-        <td>Bell</td>
-        <td><i class="canada flag"></i></td>
-        <td>6</td>
-        <td><div class="ui mini star rating" data-rating="4" data-max-rating="10"></div></td>
-      </tr>
-    </tbody>
-    </table>
-  </div>
-
-  <div class="map-canvas">
+    <!-- GOOGLE MAPS -->
+    <div class="map-canvas pusher">
+      <div class="layers-toggle">
+        <button class="ui toggle button">Layers</button>
+      </div>
       <div id="map"></div>
-  </div>
+    </div>
+
 </div>
 
+
+
+
+</body>
 
 <?php include '_includes/global-footer.php'; ?>
 
 
-
 <!-- Semantic UI :: Tabs & Tables  -->
-<script type="text/javascript" src="_assets/js/sort-table.js"></script>
+<script type="text/javascript" src="_assets/js/tablesorter.js"></script>
 
 <script>
   $('.top.menu .item').tab();
-  $('table').tablesort();
+  $("table").tablesorter({});
   $('.ui.rating').rating('disable');
+  $('a.from.basic-srch-itm')
+    .popup({
+      popup: '.from.popup',
+      inline: true,
+      on: 'click',
+    })
+  ;
+  $('.basic-srch-itm.via')
+    .popup({
+      popup: '.via.popup',
+      inline: true,
+      on: 'click',
+    })
+  ;
+  $('.basic-srch-itm.to')
+    .popup({
+      popup: '.to.popup',
+      inline: true,
+      on: 'click',
+    })
+  ;
+  $('.ui.sidebar')
+    .sidebar({context:$('.map-holder')})
+    .sidebar('setting', 'transition', 'overlay', 'toggle')
+    .sidebar('attach events', '.map-holder .layers-toggle .toggle.button')
+  ;
 </script>
+
 
 <!-- Google Maps API  -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
