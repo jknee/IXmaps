@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="47px" viewBox="0 0 55 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>icn-route</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-148.000000, -850.000000)" id="Section-2">
+            <g transform="translate(123.000000, 639.000000)">
+                <g id="Group" transform="translate(0.000000, 172.000000)">
+                    <g id="1">
+                        <g id="icn-route" transform="translate(22.000000, 30.000000)">
+                            <polyline id="Path-2" stroke="#F40400" stroke-width="2" points="7.13000011 27.1230469 24.8145704 13.1337891 41.6778517 52.8916016 53.456172 27.1230469"></polyline>
+                            <ellipse id="Oval" fill="#1C6FB8" fill-rule="evenodd" cx="53.7567451" cy="26.7567451" rx="3.75674509" ry="3.75674509"></ellipse>
+                            <ellipse id="Oval-Copy" fill="#1C6FB8" fill-rule="evenodd" cx="6.75674509" cy="26.7567451" rx="3.75674509" ry="3.75674509"></ellipse>
+                            <ellipse id="Oval-Copy-2" fill="#1C6FB8" fill-rule="evenodd" cx="24.7567451" cy="12.7567451" rx="3.75674509" ry="3.75674509"></ellipse>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

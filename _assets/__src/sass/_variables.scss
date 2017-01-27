@@ -1,0 +1,45 @@
+//---------------------------------------------------------
+// Variables
+//---------------------------------------------------------
+
+// Grid
+$grid-columns: 12;
+$visual-grid: false;
+$visual-grid-color: red;
+$visual-grid-opacity: 0.1;
+
+// Dimensions
+$max-width: 1400px;
+$min-width: 360px;
+$nav-height: 80px;
+
+// Breakpoints
+$default-min: 1024px;
+$medium-max: $default-min - 1;
+$medium-min: 768px;
+$small-max: $medium-min - 1;
+$small-min: 545px;
+$mobile-max: $small-min - 1;
+
+// Colours
+$ixblue: #1C6FB8;
+$ixred: #D32125;
+
+$green: #467848;
+$green_light: #CFE3D0;
+$skyblue: #2289E4;
+$yellow: #F0CB1A;
+
+$grey_dark: #191C1F;
+$grey: #2D3A47;
+$grey_light: #F0F0F0;
+
+$black: #000000;
+$white: #ffffff;
+$page: #fafafa;
+
+// Font Stacks
+$OpenSans: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$WorkSans: "Work Sans", Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+$text: #454545;
+$baseline: 8px;

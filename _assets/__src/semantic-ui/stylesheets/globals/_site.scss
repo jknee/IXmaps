@@ -1,0 +1,335 @@
+/*!
+ * # Semantic UI 2.2.7 - Site
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+             Page
+*******************************/
+
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 14px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  background: #FFFFFF;
+  font: 18px $OpenSans;
+  font-weight: 400;
+  color: $text;
+  line-height: $baseline*4;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+    @include media($small)   { font-size: 16px}
+}
+
+
+/*******************************
+             Headers
+*******************************/
+h1,
+h2,
+h3 {
+  font-family: $WorkSans;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: $baseline*9;
+    font-weight: 900;
+    color: $white;
+    text-shadow:
+      0px 0px 50px rgba(0,0,0, .20),
+      0px 0px 24px rgba(0,0,0, .3),
+      0px 2px 8px rgba(0,0,0, .5);
+}
+h2 {
+    font-size: 42px;
+    line-height: $baseline*6;
+    font-weight: 700;
+    color: $grey;
+    margin-top: $baseline*5;
+    margin-bottom: $baseline*2;
+}
+h3 {
+    font-size: 36px;
+    color: $grey;
+    font-weight: 400;
+    margin-top: $baseline*5;
+    margin-bottom: $baseline*2;
+}
+
+h4, h5, h6{
+    font-family: $OpenSans;
+    color: $grey_dark;
+}
+h4 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: $baseline*3;
+    margin-top: $baseline*3;
+    margin-bottom: $baseline;
+}
+h5 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: $baseline*3;
+    margin-top: $baseline*2;
+    margin-bottom: $baseline;
+}
+h6 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: $baseline*2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/*******************************
+             Text
+*******************************/
+p {
+  margin: 0em 0em 1em;
+}
+p:first-child {
+  margin-top: 0em;
+}
+p:last-child {
+  margin-bottom: 0em;
+}
+
+p.intro{
+  font-size: 30px;
+  line-height: $baseline*6;
+}
+
+p.minor{
+  font-size: 14px;
+  line-height: $baseline*3;
+}
+
+p.small{
+    font-size: 11px;
+    line-height: $baseline*2;
+}
+
+strong{ font-weight: bold; }
+em { font-style: italic; }
+
+
+/*-------------------
+        Links
+--------------------*/
+
+a {
+  color: $ixblue;
+  text-decoration: none;
+}
+a:hover {
+  color: $ixblue;
+  text-decoration: none;
+}
+
+article a, footer p a {
+  border-bottom: 1px solid $green_light;
+  text-decoration: none;
+  box-shadow: inset 0 -2px 0 $green_light;
+  color: $green !important;
+  transition: all .25s ease-in-out;
+  padding: 2px 2px 0 2px;
+  cursor: pointer;
+  &:hover {
+    color: $text;
+    background-color: $green_light;
+  }
+  &:active {
+    color: $text;
+    background-color: $green_light;
+  }
+  &:visited {
+    color: $text;
+    background-color: $green_light;
+  }
+}
+
+
+/*******************************
+          Highlighting
+*******************************/
+
+
+/* Site */
+::-webkit-selection {
+  background-color: #FAEEAF;
+  color: $text;
+}
+::-moz-selection {
+  background-color: #FAEEAF;
+  color: $text;
+}
+::selection {
+  background-color: #FAEEAF;
+  color: $text;
+}
+
+/* Form */
+textarea::-webkit-selection,
+input::-webkit-selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: rgba(0, 0, 0, 0.87);
+}
+textarea::-moz-selection,
+input::-moz-selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: rgba(0, 0, 0, 0.87);
+}
+textarea::selection,
+input::selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: rgba(0, 0, 0, 0.87);
+}
+
+
+/*******************************
+        Global Overrides
+*******************************/
+
+
+
+/*******************************
+         Site Overrides
+*******************************/
+
+.list-header{
+    margin-bottom: $baseline
+}
+
+article ul,
+article ol {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  list-style: none;
+  padding-left: 32px;
+  margin-bottom: 8px;
+}
+
+article ul li:before {
+    content: "• ";
+    color: $ixblue;
+    margin-left: -16px;
+    display: block;
+    float: left;
+}
+
+article ol {counter-reset: li}
+article ol li {counter-increment: li}
+article ol li::before {
+    content: counter(li) ". ";
+    color: $ixblue;
+    margin-left: -32px;
+    display: block;
+    float: left;
+}
+
+
+article li{ padding-bottom: $baseline}
+
+
+
+dt{font-weight: bold; color: $grey_dark}
+dd{margin-bottom: $baseline*2; margin-left: 0}
+blockquote {
+    display: block;
+    background: $page;
+    border-left: 4px solid;
+    border-left-color: $grey_light;
+    padding: 8px 16px;
+    font-style: italic;
+    color: #666;
+}
+blockquote p:last-child {
+    margin-bottom: 0;
+}
+pre {
+    font-family: Consolas, "Courier New", Courier, mono;
+    background: black;
+    background: rgba(0,0,0,.8);
+    color: #eee;
+    padding: 10px 20px;
+}
+sup, sub {
+    font-size: 80%;
+    line-height: 0;
+    top:0;
+}
+sup {
+    vertical-align: super;
+}
+sub {
+    vertical-align: sub;
+}
+code {
+    font-family: Consolas, "Courier New", Courier, mono;
+}
+
+
+// 6. Forms
+form {
+}
+    form p {
+        margin: 0;
+    }
+label {
+    display: block;
+    margin-bottom: 0;
+}
+input, textarea, select {
+    display: block;
+    margin: 4px 0 24px 0;
+}
+input[type=text], input[type=email], input[type=url], textarea {
+    width: 400px;
+    border: 1px solid;
+    border-color: #ccc;
+    border-color: rgba(0,0,0,.1);
+    height: 30px;
+    background: #fff;
+    background: rgba(255,255,255,.8);
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+textarea {
+    height: 150px;
+    width: 450px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+label.error {
+    width: 400px;
+    text-align: right;
+    color: #aa0000;
+}
+label.error:before {
+    container: "▲ ";
+}
+input.error, textarea.error {
+    border-color: #aa0000;
+}
