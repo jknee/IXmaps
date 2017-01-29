@@ -9,6 +9,7 @@
 <body id="map-page">
 <?php include '_includes/global-navigation.php'; ?>
 
+<<<<<<< HEAD
 <?php include '_includes/map-modal-settings.php'; ?>
 <?php include '_includes/map-modal-carrier.php'; ?>
 <?php include '_includes/map-modal-router.php'; ?>
@@ -20,6 +21,8 @@
 <button id="traceroutes_modal">TR DETAILS</button>
 
 
+=======
+>>>>>>> origin/master
 <!-- SEARCH AREA -->
 <?php include '_includes/map-search.php'; ?>
 
@@ -57,6 +60,7 @@
   $('.top.menu .item').tab();
   $("table").tablesorter({});
   $('.ui.rating').rating('disable');
+<<<<<<< HEAD
 
   $("#settings_modal").click(function(){
     $('.settings.modal').modal('show');
@@ -74,6 +78,8 @@
     $('.carrier.modal').modal('show');
   });
 
+=======
+>>>>>>> origin/master
   $('a.from.basic-srch-itm')
     .popup({
       popup: '.from.popup',
@@ -100,9 +106,12 @@
     .sidebar('setting', 'transition', 'overlay', 'toggle')
     .sidebar('attach events', '.map-holder .layers-toggle .toggle.button')
   ;
+<<<<<<< HEAD
   $('.ui.accordion')
     .accordion()
   ;
+=======
+>>>>>>> origin/master
 </script>
 
 

@@ -2,11 +2,16 @@
 <html>
 <head>
     <meta charset="utf-8">
+<<<<<<< HEAD
     <title>FAQs | IXmaps</title>
+=======
+    <title>IXmaps</title>
+>>>>>>> origin/master
     <?php include '../_includes/global-head.php'; ?>
 </head>
 
 <body>
+<<<<<<< HEAD
 <?php include '../_includes/global-navigation.php'; ?>
 
 <header class="hero">
@@ -259,5 +264,28 @@
     .accordion()
     ;
 </script>
+=======
+
+<?php include '../_includes/global-navigation.php'; ?>
+
+<header class="container">
+    <div class="row">
+        <div class="col-6 col-left-3 col-md-8 col-md-left-2 col-sm-10 col-sm-left-1">
+            <h2>FAQs</h2>
+        </div>
+    </div>
+</header>
+
+<section class="container">
+    <div class="row">
+        <div class="col-6 col-left-3 col-md-8 col-md-left-2 col-sm-10 col-sm-left-1">
+
+        </div>
+    </div>
+</section>
+
+<?php include '../_includes/global-footer.php'; ?>
+
+>>>>>>> origin/master
 </body>
 </html>

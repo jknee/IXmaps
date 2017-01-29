@@ -2983,7 +2983,11 @@
 .ui.inverted.yellow.button {
   background-color: transparent;
   box-shadow: 0px 0px 0px 2px #FFE21F inset !important;
+<<<<<<< HEAD
   color: #FFE21F !important;
+=======
+  color: #FFE21F;
+>>>>>>> origin/master
 }
 .ui.inverted.yellow.buttons .button:hover,
 .ui.inverted.yellow.button:hover,
@@ -3006,6 +3010,7 @@
 }
 .ui.inverted.yellow.buttons .active.button,
 .ui.inverted.yellow.active.button {
+<<<<<<< HEAD
   background-color: #FFE21F !important;
   color: #000 !important
 }
@@ -3013,6 +3018,13 @@
 .ui.inverted.yellow.button:active {
   background-color: #FFE21F !important;
   color: #000 !important
+=======
+  background-color: #ffdf05;
+}
+.ui.inverted.yellow.buttons .button:active,
+.ui.inverted.yellow.button:active {
+  background-color: #ebcd00;
+>>>>>>> origin/master
 }
 
 /* Inverted Basic */

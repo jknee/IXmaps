@@ -12,6 +12,7 @@
       <div class="social-links">
         <ul>
           <li><a href="#">
+<<<<<<< HEAD
             <a class="ui large basic labelled icon blue button">
             <i class="icon"><img src="_assets/img/scl-icn-mail.svg" alt=""></i>&ensp;
             Email</a>
@@ -25,6 +26,21 @@
             <a class="ui large basic labelled icon blue button">
             <i class="icon"><img src="_assets/img/scl-icn-twitter.svg" alt=""></i>&ensp;
             Twitter</a>
+=======
+            <button class="ui large basic labelled icon blue button">
+            <i class="icon"><img src="_assets/img/scl-icn-mail.svg" alt=""></i>&ensp;
+            Email</button>
+          </a></li>
+          <li><a href="#">
+            <button class="ui large basic labelled icon blue button">
+            <i class="icon"><img src="_assets/img/scl-icn-git.svg" alt=""></i>&ensp;
+            GitHub</button>
+          </a></li>
+          <li><a href="#">
+            <button class="ui large basic labelled icon blue button">
+            <i class="icon"><img src="_assets/img/scl-icn-twitter.svg" alt=""></i>&ensp;
+            Twitter</button>
+>>>>>>> origin/master
           </a></li>
         </ul>
       </div>
@@ -35,10 +51,17 @@
       <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">Creative Commons Share-Alike License</a>.<br>
       Last modified Friday 02 December, 2016 @ 04:32pm.</p>
 
+<<<<<<< HEAD
       <a id="privacy" class="ui basic button" href="privacy.php" target="_self">
         <img src="_assets/img/icn-privacypolicy.svg" alt="">&ensp;
         Privacy Policy
       </a>
+=======
+      <button id="privacy" class="ui basic button" href="footer-privacy.php" target="_self">
+        <img src="_assets/img/icn-privacypolicy.svg" alt="">&ensp;
+        Privacy Policy
+      </button>
+>>>>>>> origin/master
 
   </div>
 

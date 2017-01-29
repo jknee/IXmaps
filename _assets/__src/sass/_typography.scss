@@ -1,0 +1,239 @@
+//---------------------------------------------------------
+// Typography
+//      1. Base
+//      2. Headers
+//      3. Paragraph Formatting
+//      4. Block Elements
+//      5. Forms
+//      6. Buttons
+//      7. Utilities
+//---------------------------------------------------------
+
+
+
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, pre, blockquote, textarea, button {
+    margin-bottom: $baseline * 2;
+}
+
+// 2. Headers
+h1, h2, h3{
+    font-family: $WorkSans;
+    margin-top: $baseline*2;
+}
+
+h1{
+    font-size: 64px;
+    line-height: $baseline*9;
+    font-weight: 900;
+    color: $white;
+    text-shadow:
+      0px 0px 50px rgba(0,0,0, .20),
+      0px 0px 24px rgba(0,0,0, .3),
+      0px 2px 8px rgba(0,0,0, .5);
+}
+
+h2 {
+    font-size: 42px;
+    line-height: $baseline*6;
+    font-weight: 700;
+    color: $ixblue;
+}
+
+h3 {
+    font-size: 36px;
+    margin-bottom: $baseline*4;
+    color: $ixblue;
+}
+
+
+
+h4, h5, h6{
+    font-family: $OpenSans;
+    color: $grey_dark;
+    margin-top: $baseline*2;
+}
+
+h4 {
+    font-size: 30px;
+    line-height: $baseline*5;
+    font-weight: 700;
+}
+h5 {
+    font-size: 24px;
+    line-height: $baseline*4;
+    font-weight: 700;
+}
+h6 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: $baseline*3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+
+// 4. Block Elements
+.list-header{
+    margin-bottom: $baseline
+}
+ul, ol{
+    margin-left: 0;
+    list-style: none;
+}
+
+ul li:before {
+    content: "• ";
+    color: $ixblue;
+}
+
+ol {counter-reset: li}
+ol li {counter-increment: li}
+ol li::before {
+    content: counter(li) ". ";
+    color: $ixblue;
+}
+
+article li{ padding-bottom: $baseline}
+
+
+dt{font-weight: bold; color: $grey_dark}
+dd{margin-bottom: $baseline*2}
+blockquote {
+    display: block;
+    background: #eee;
+    background: rgba(0,0,0,.05);
+    border-left: 4px solid;
+    border-left-color: #ccc;
+    border-left-color:  rgba(0,0,0,.1);
+    padding: 10px;
+    font-style: italic;
+}
+blockquote p:last-child {
+    margin-bottom: 0;
+}
+pre {
+    font-family: Consolas, "Courier New", Courier, mono;
+    background: black;
+    background: rgba(0,0,0,.8);
+    color: #eee;
+    padding: 10px 20px;
+}
+sup, sub {
+    font-size: 80%;
+    line-height: 0;
+}
+sup {
+    vertical-align: super;
+}
+sub {
+    vertical-align: sub;
+}
+code {
+    font-family: Consolas, "Courier New", Courier, mono;
+}
+
+
+// 6. Forms
+form {
+}
+    form p {
+        margin: 0;
+    }
+label {
+    display: block;
+    margin-bottom: 0;
+}
+input, textarea, select {
+    display: block;
+    margin: 4px 0 24px 0;
+}
+input[type=text], input[type=email], input[type=url], textarea {
+    width: 400px;
+    border: 1px solid;
+    border-color: #ccc;
+    border-color: rgba(0,0,0,.1);
+    height: 30px;
+    background: #fff;
+    background: rgba(255,255,255,.8);
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+textarea {
+    height: 150px;
+    width: 450px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+label.error {
+    width: 400px;
+    text-align: right;
+    color: #aa0000;
+}
+label.error:before {
+    container: "▲ ";
+}
+input.error, textarea.error {
+    border-color: #aa0000;
+}
+
+// 7. Buttons
+// .button{
+//   font-family: $WorkSans;
+//   font-size: 14px;
+//   font-weight: 600;
+//   text-decoration: none;
+//   text-align: center;
+//   line-height: 40px;
+//   background: $ixblue;
+//   color: $white;
+//   height: 40px;
+//   padding: 0 40px;
+//   margin: 0;
+//   border-radius: 8px;
+//   display: inline-block;
+//   appearance: none;
+//   cursor: pointer;
+//   box-sizing: border-box;
+//   transition-property: all;
+//   transition-duration: .3s;
+// }
+
+// .ghost{
+//     background: none;
+//     border: 1px solid $ixblue;
+//       color: $ixblue;
+// }
+
+// .borderless{
+//     background: none;
+//     border: none;
+//     color: $ixblue;
+//     :hover{
+//         background: $grey_light;
+//     }
+// }
+
+// 8. Utilities
+.text-center{
+  text-align: center
+}
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
+.clear{
+    float: clear
+}
+
+
+
