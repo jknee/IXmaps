@@ -13,12 +13,12 @@
 
                     <p>To see routes from your own personal device, you must first generate them yourself. Go to the Contribute page for instructions on how to do this.</p>
 
-                    <h6 class="ui inverted header">VIDEO How to see internet routes</h6>
+                    <h6>VIDEO How to see internet routes</h6>
                     <p>This step by step video shows how you can selectively map routes in the IXmaps database.</p>
 
-                    <h6 class="ui inverted header">See FAQs:</h6>
+                    <h6>See FAQs:</h6>
                     <ul>
-                        <li>Where are the main internet exchanges in North America?</li>
-                        <li>How do I read a traceroute?</li>
-                        <li>How do we locate routers geographically? </li>
+                        <li><a href="#">Where are the main internet exchanges in North America?</a></li>
+                        <li><a href="#">How do I read a traceroute?</a></li>
+                        <li><a href="#">How do we locate routers geographically?</a></li>
                     </ul>

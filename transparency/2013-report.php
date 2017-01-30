@@ -2,13 +2,12 @@
 <html>
 <head>
     <meta charset="utf-8">
-<<<<<<< HEAD
     <title>Transparency | 2013 Report</title>
     <?php include '../_includes/global-head.php'; ?>
-    <link rel="stylesheet" href="../_assets/css/transparency.css" type="text/css">
+    <link rel="stylesheet" href="/_assets/css/transparency.css" type="text/css">
 </head>
 
-<body>
+<body id="report-2013-page">
 
 <?php include '../_includes/global-navigation.php'; ?>
 
@@ -20,11 +19,11 @@
     <p>This is an archived report. <a href="https://www.ixmaps.ca/transparency.php">Read the Current Report &#8594;</a></p>
   </div>
 
-  <img class="ui centered image" src="../_assets/img/transparency/star-table-2013.png">
+  <img class="ui centered image" src="/_assets/img/transparency/star-table-2013.png">
 
   <section id="download">
     <article>
-        <a href="../_assets/img/transparency/DataPrivacyTransparencyofCanadianISPs-2013.pdf" target="_blank"><button>Download the Full 2013 Report</button></a>
+        <a href="/_assets/img/transparency/DataPrivacyTransparencyofCanadianISPs-2013.pdf" target="_blank"><button>Download the Full 2013 Report</button></a>
         <p>Download the complete <em>“Keeping Internet Users in the Know or in the Dark”</em> report (PDF)
     </article>
   </section>
@@ -54,7 +53,7 @@
         <p>In the wake of the Snowden revelations about NSA surveillance, recent calls for greater data privacy recommend that internet service providers (ISPs) be more forthcoming about their handling of our personal information. Responding to this concern as well as in keeping with the transparency, openness and accountability principles fundamental to Canadian privacy law, this report evaluates the data privacy transparency of twenty of the most prominent ISPs (aka carriers) currently serving the Canadian public. We award ISPs up to ten 'stars' based on the public availability of the following information:</p>
 
         <ol>
-          <li>A public commitment to PIPEDA<sup id="fn1-inline"><a href="https://www.ixmaps.ca/transparency-2013.php#fn1">1</a></sup>  compliance.</li>
+          <li>A public commitment to PIPEDA<sup id="fn1-inline"><a href="#fn1">1</a></sup>  compliance.</li>
           <li>A public commitment to inform users about all third party data requests.</li>
           <li>Transparency about frequency of third party data requests and disclosures.</li>
           <li>Transparency about conditions for third party data disclosures.</li>
@@ -68,9 +67,9 @@
 
         <p>These criteria are designed to address on-going privacy and civil liberties concerns, especially in light of the controversial expansion of state surveillance of internet activities as well as recent ‘lawful access’ proposals, notably Bill C-30 and the current Bill C-13.</p>
 
-        <p>Stars are awarded based on careful examination of each ISP’s corporate website. Assuming that carriers want to make it easy for their customers to find information about corporate practices relating to personal information, and that the on-line privacy policy is the first (and only) place users might look, we focus our attention on these public statements<sup id="fn2-inline"> <a href="https://www.ixmaps.ca/transparency-2013.php#fn2">2</a></sup>.</p>
+        <p>Stars are awarded based on careful examination of each ISP’s corporate website. Assuming that carriers want to make it easy for their customers to find information about corporate practices relating to personal information, and that the on-line privacy policy is the first (and only) place users might look, we focus our attention on these public statements<sup id="fn2-inline"> <a href="#fn2">2</a></sup>.</p>
 
-        <p>We selected the 20 ISPs in our sample based on their prevalence among the approximately 6000 internet traceroutes in the IXmaps.ca database (out of 25,000+ in total) that correspond to intra-Canadian routes — i..e. with origin and destination in Canada. The star ratings can be seen in the Star Table above<sup id="fn3-inline"> <a href="https://www.ixmaps.ca/transparency-2013.php#fn3">3</a> </sup>. The full report contains the detailed assessments for each carrier.</p>
+        <p>We selected the 20 ISPs in our sample based on their prevalence among the approximately 6000 internet traceroutes in the IXmaps.ca database (out of 25,000+ in total) that correspond to intra-Canadian routes — i..e. with origin and destination in Canada. The star ratings can be seen in the Star Table above<sup id="fn3-inline"> <a href="#fn3">3</a> </sup>. The full report contains the detailed assessments for each carrier.</p>
     </section>
 
     <section id="findings">
@@ -99,7 +98,7 @@
         <p>No carrier providing internet services directly to Canadians has yet followed the lead of major US internet service providers, such as AT&amp;T, Verizon, Google, Facebook or Twitter, and proactively reports on the frequency of law enforcement requests and how they respond to them.</p>
 
         <h5>Routing transparency is almost entirely absent</h5>
-        <p>Fewer than half (8/20) of the ISP privacy policies refer to the location and jurisdiction for the information they store. Only one (Hurricane) gives an indication of where it routes customer data and none make explicit that they may route data via the US where it is subject to NSA surveillance<sup id="fn4-inline"> <a href="https://www.ixmaps.ca/transparency-2013.php#fn4">4</a> </sup>. This is part of a more general pattern of not providing specific information publicly, instead placing the burden on individuals to make specific enquiries.</p>
+        <p>Fewer than half (8/20) of the ISP privacy policies refer to the location and jurisdiction for the information they store. Only one (Hurricane) gives an indication of where it routes customer data and none make explicit that they may route data via the US where it is subject to NSA surveillance<sup id="fn4-inline"> <a href="#fn4">4</a> </sup>. This is part of a more general pattern of not providing specific information publicly, instead placing the burden on individuals to make specific enquiries.</p>
 
         <h5>ISPs rely heavily on implied consent</h5>
         <p>Many of the privacy policies evaluated contain buried “catch-all” language relating to implied consent. For example, Bell’s privacy policy (p. 8) notes:</p>
@@ -195,11 +194,11 @@
 
       <h6 id="notes">Notes</h6>
       <ol class="notes">
-        <li id="fn1">Personal Information Protection and Electronic Documents Act <a class="returntoarticle" href="https://www.ixmaps.ca/transparency-2013.php#fn1-inline">↩</a></li>
-        <li id="fn2">In the case of criterion 9 – <em>Publicly visible steps to avoid U.S. routing of Canadian data</em>, we also examine the peering arrangements noted on the websites of the two main Canadian public internet exchanges, TorIX and OttIX (Toronto/Ottawa Internet Exchanges) as these are also publicly visible. <a class="returntoarticle" href="https://www.ixmaps.ca/transparency-2013.php#fn2-inline">↩</a></li>
+        <li id="fn1">Personal Information Protection and Electronic Documents Act <a class="returntoarticle" href="#fn1-inline">↩</a></li>
+        <li id="fn2">In the case of criterion 9 – <em>Publicly visible steps to avoid U.S. routing of Canadian data</em>, we also examine the peering arrangements noted on the websites of the two main Canadian public internet exchanges, TorIX and OttIX (Toronto/Ottawa Internet Exchanges) as these are also publicly visible. <a class="returntoarticle" href="#fn2-inline">↩</a></li>
         <li id="fn3">Star ratings can also be reviewed for particular internet routings and carriers on the
-      <a href="https://ixmaps.ca/explore">Explore page of the IXmaps website</a>. <a class="returntoarticle" href="https://www.ixmaps.ca/transparency-2013.php#fn3-inline">↩</a></li>
-        <li id="fn4">It is worth noting that personal information that is kept within Canadian jurisdiction is also subject to state surveillance activities; however, Canadian entities conducting surveillance within Canada are subject to Canadian law and its Constitution. Should Canadians determine that the Canadian surveillance apparatus is to change, that would possibly affect the level of surveillance on intra-Canadian traffic. The same cannot be said about traffic that passes through the US and other foreign countries as Canadians cannot easily force change in the laws and surveillance practices of foreign countries. <a class="returntoarticle" href="https://www.ixmaps.ca/transparency-2013.php#fn4-inline">↩</a></li>
+      <a href="https://ixmaps.ca/explore">Explore page of the IXmaps website</a>. <a class="returntoarticle" href="#fn3-inline">↩</a></li>
+        <li id="fn4">It is worth noting that personal information that is kept within Canadian jurisdiction is also subject to state surveillance activities; however, Canadian entities conducting surveillance within Canada are subject to Canadian law and its Constitution. Should Canadians determine that the Canadian surveillance apparatus is to change, that would possibly affect the level of surveillance on intra-Canadian traffic. The same cannot be said about traffic that passes through the US and other foreign countries as Canadians cannot easily force change in the laws and surveillance practices of foreign countries. <a class="returntoarticle" href="#fn4-inline">↩</a></li>
       </ol>
     </section>
 
@@ -224,7 +223,7 @@
       <p>The views expressed are of course those of the authors alone.</p>
 
       <p class="cc">
-      <a class="cc-image" rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="../_assets/img/cc-license.png"></a>
+      <a class="cc-image" rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="/_assets/img/cc-license.png"></a>
       <br>
       <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type"><em>"Keeping internet users in the know or in the dark: A report on the data privacy transparency of Canadian internet service providers"</em></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://ixmaps.ca/transparency.php" property="cc:attributionName" rel="cc:attributionURL">Andrew Clement and Jonathan Obar </a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/2.5/ca/" target="_blank">Creative Commons Attribution 2.5 Canada (CC BY 2.5 CA) </a>.
       </p>
@@ -236,7 +235,7 @@
 
 <?php include '../_includes/global-footer.php'; ?>
 
-<script type="text/javascript" src="../_assets/js/smooth-scroll.js"></script>
+<script src="/_assets/js/smooth-scroll.js"></script>
 
 <script>
 $(document).ready(function(){
@@ -263,9 +262,9 @@ $(document).ready(function(){
 
 
   <!--
-  <script type="text/javascript" src="./transparency_files/lightbox.js"></script>
-  <script type="text/javascript" src="./transparency_files/scriptaculous.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+  <script src="./transparency_files/lightbox.js"></script>
+  <script src="./transparency_files/scriptaculous.js"></script>
+  <script src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
   -->
 
 
@@ -314,60 +313,6 @@ $('.tabs a').click(function(e){
     });
     </script>
 
-=======
-    <title>IXmaps</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Styles -->
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext" rel="stylesheet">
-
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="favicon.png">
-  </head>
-
-<body>
-
-<?php include 'global-head.php'; ?>
-
-<header class="container">
-<div class="row">
-<div class="col-6 col-left-3 col-md-8 col-md-left-2 col-sm-10 col-sm-left-1">
-    <h2>Privacy Policy</h2>
-</div>
-</div>
-</header>
-
-<section class="container">
-    <div class="row">
-        <div class="col-6 col-left-3 col-md-8 col-md-left-2 col-sm-10 col-sm-left-1">
-            <p>This privacy policy outlines how we may collect your personal data as a visitor to our website. Through the IXmaps website and TRgen traceroute software, we collect the following information:</p>
-            <ul>
-                <li>E-mail addresses from those who send inquiries to the project. We will not share, sell, or distribute your e-mail address.</li>
-                <li>Usage statistics on our Web pages, page downloads, and search engine queries.</li>
-                <li>If you contribute to traceroutes, we anonymize your IP address by turning the last three digits into zeroes.</li>
-            </ul>
-            <p>You may contact us at any time to correct or change any personal data that we hold about you (for example, if you want to change your username). You may also ask to have all data related to your activity removed from our system. To do so, please email us.</p>
-            <p>This site is governed by the <a target="blank" href="https://www.fippa.utoronto.ca/">privacy policies of the University of Toronto</a>, and hence Ontario's <a target="blank" href="https://www.e-laws.gov.on.ca/html/statutes/english/elaws_statutes_90f31_e.htm">Freedom of Information and Protection of Privacy Act (FIPPA)</a>.</p>
-        </div>
-    </div>
-</section>
-
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script>window.jQuery||document.write('<script src="js/jquery.min.js"><\/script>')</script>
-<script src="js/main.min.js"></script>
->>>>>>> origin/master
 
 </body>
 </html>

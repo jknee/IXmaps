@@ -393,7 +393,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background: none !important;
+  background: transparent !important;
   padding: 0px !important;
   border: none !important;
   box-shadow: none !important;
@@ -1583,7 +1583,7 @@
 .ui.inverted.transparent.buttons .button,
 .ui.inverted.transparent.button {
   background-color: transparent;
-  box-shadow: 0px 0px 0px 2px $ixblue inset !important;
+  box-shadow: 0px 0px 0px 1px $ixblue inset !important;
   color: $ixblue;
 }
 .ui.inverted.transparent.buttons .button:hover,
@@ -1660,19 +1660,19 @@
 }
 .ui.blue.buttons .button:hover,
 .ui.blue.button:hover {
-  background-color: #1678c2;
+  background-color: $ixblue;
   color: #FFFFFF;
   text-shadow: none;
 }
 .ui.blue.buttons .button:focus,
 .ui.blue.button:focus {
-  background-color: #0d71bb;
+  background-color: $ixblue;
   color: #FFFFFF;
   text-shadow: none;
 }
 .ui.blue.buttons .button:active,
 .ui.blue.button:active {
-  background-color: #1a69a4;
+  background-color: $ixblue;
   color: #FFFFFF;
   text-shadow: none;
 }
@@ -1680,7 +1680,7 @@
 .ui.blue.buttons .active.button:active,
 .ui.blue.active.button,
 .ui.blue.button .active.button:active {
-  background-color: #1279c6;
+  background-color: $ixblue;
   color: #FFFFFF;
   text-shadow: none;
 }
@@ -1722,8 +1722,8 @@
 .ui.inverted.blue.buttons .button,
 .ui.inverted.blue.button {
   background-color: transparent;
-  box-shadow: 0px 0px 0px 2px #54C8FF inset !important;
-  color: #54C8FF;
+  box-shadow: 0px 0px 0px 2px $ixblue inset !important;
+  color: $ixblue;
 }
 .ui.inverted.blue.buttons .button:hover,
 .ui.inverted.blue.button:hover,
@@ -1738,19 +1738,19 @@
 }
 .ui.inverted.blue.buttons .button:hover,
 .ui.inverted.blue.button:hover {
-  background-color: #3ac0ff;
+  background-color: $ixblue;
 }
 .ui.inverted.blue.buttons .button:focus,
 .ui.inverted.blue.button:focus {
-  background-color: #2bbbff;
+  background-color: $ixblue;
 }
 .ui.inverted.blue.buttons .active.button,
 .ui.inverted.blue.active.button {
-  background-color: #3ac0ff;
+  background-color: $ixblue;
 }
 .ui.inverted.blue.buttons .button:active,
 .ui.inverted.blue.button:active {
-  background-color: #21b8ff;
+  background-color: $ixblue;
 }
 
 /* Inverted Basic */
@@ -1765,25 +1765,25 @@
 .ui.inverted.blue.buttons .basic.button:hover,
 .ui.inverted.blue.basic.button:hover {
   box-shadow: 0px 0px 0px 2px #3ac0ff inset !important;
-  color: #54C8FF !important;
+  color: $ixblue !important;
 }
 .ui.inverted.blue.basic.buttons .button:focus,
 .ui.inverted.blue.basic.buttons .button:focus,
 .ui.inverted.blue.basic.button:focus {
-  box-shadow: 0px 0px 0px 2px #2bbbff inset !important;
-  color: #54C8FF !important;
+  box-shadow: 0px 0px 0px 2px $ixblue inset !important;
+  color: $ixblue !important;
 }
 .ui.inverted.blue.basic.buttons .active.button,
 .ui.inverted.blue.buttons .basic.active.button,
 .ui.inverted.blue.basic.active.button {
-  box-shadow: 0px 0px 0px 2px #3ac0ff inset !important;
-  color: #54C8FF !important;
+  box-shadow: 0px 0px 0px 2px $ixblue inset !important;
+  color: $ixblue !important;
 }
 .ui.inverted.blue.basic.buttons .button:active,
 .ui.inverted.blue.buttons .basic.button:active,
 .ui.inverted.blue.basic.button:active {
-  box-shadow: 0px 0px 0px 2px #21b8ff inset !important;
-  color: #54C8FF !important;
+  box-shadow: 0px 0px 0px 2px $ixblue inset !important;
+  color: $ixblue !important;
 }
 
 /*--- Green ---*/
@@ -2983,11 +2983,7 @@
 .ui.inverted.yellow.button {
   background-color: transparent;
   box-shadow: 0px 0px 0px 2px #FFE21F inset !important;
-<<<<<<< HEAD
   color: #FFE21F !important;
-=======
-  color: #FFE21F;
->>>>>>> origin/master
 }
 .ui.inverted.yellow.buttons .button:hover,
 .ui.inverted.yellow.button:hover,
@@ -3010,7 +3006,6 @@
 }
 .ui.inverted.yellow.buttons .active.button,
 .ui.inverted.yellow.active.button {
-<<<<<<< HEAD
   background-color: #FFE21F !important;
   color: #000 !important
 }
@@ -3018,13 +3013,6 @@
 .ui.inverted.yellow.button:active {
   background-color: #FFE21F !important;
   color: #000 !important
-=======
-  background-color: #ffdf05;
-}
-.ui.inverted.yellow.buttons .button:active,
-.ui.inverted.yellow.button:active {
-  background-color: #ebcd00;
->>>>>>> origin/master
 }
 
 /* Inverted Basic */

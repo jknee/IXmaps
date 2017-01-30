@@ -2,16 +2,11 @@
 <html>
 <head>
     <meta charset="utf-8">
-<<<<<<< HEAD
     <title>Resources | IXmaps</title>
-=======
-    <title>IXmaps</title>
->>>>>>> origin/master
     <?php include '../_includes/global-head.php'; ?>
 </head>
 
-<body>
-<<<<<<< HEAD
+<body id="resources-page">
 <?php include '../_includes/global-navigation.php'; ?>
 
 <header class="hero">
@@ -31,11 +26,11 @@
         <div class="ui divider"></div>
         <h2>Videos</h2>
         <ul>
-            <li>What is IXmaps?</li>
-            <li>Do you know where your data goes?</li>
-            <li>Canadian Internet Boomerang Routing</li>
-            <li>How to Search the IXmaps Database</li>
-            <li>IXmaps: See where your data travels (OpenMedia)</li>
+            <li><a href="https://vimeo.com/67102223" target="_blank">What is IXmaps?</a></li>
+            <li><a href="https://www.youtube.com/watch?v=pvdIB5vr4cw" target="_blank">Do you know where your data goes?</a></li>
+            <li><a href="https://www.youtube.com/watch?v=F_v0VMvjcI8" target="_blank">Canadian Internet Boomerang Routing</a></li>
+            <li><a href="https://www.youtube.com/watch?v=_K_WIquGGbk" target="_blank">How to Search the IXmaps Database</a></li>
+            <li><a href="https://www.youtube.com/watch?v=tHvuLCPiVg4" target="_blank">IXmaps: See where your data travels (OpenMedia)</a></li>
         </ul>
     </article>
 
@@ -68,35 +63,5 @@
     ;
 </script>
 
-=======
-
-<?php include '../_includes/global-navigation.php'; ?>
-
-<header class="container">
-    <div class="row">
-        <div class="col-6 col-left-3 col-md-8 col-md-left-2 col-sm-10 col-sm-left-1">
-            <h2>Privacy Policy</h2>
-        </div>
-    </div>
-</header>
-
-<section class="container">
-    <div class="row">
-        <div class="col-6 col-left-3 col-md-8 col-md-left-2 col-sm-10 col-sm-left-1">
-            <p>This privacy policy outlines how we may collect your personal data as a visitor to our website. Through the IXmaps website and TRgen traceroute software, we collect the following information:</p>
-            <ul>
-                <li>E-mail addresses from those who send inquiries to the project. We will not share, sell, or distribute your e-mail address.</li>
-                <li>Usage statistics on our Web pages, page downloads, and search engine queries.</li>
-                <li>If you contribute to traceroutes, we anonymize your IP address by turning the last three digits into zeroes.</li>
-            </ul>
-            <p>You may contact us at any time to correct or change any personal data that we hold about you (for example, if you want to change your username). You may also ask to have all data related to your activity removed from our system. To do so, please email us.</p>
-            <p>This site is governed by the <a target="blank" href="https://www.fippa.utoronto.ca/">privacy policies of the University of Toronto</a>, and hence Ontario's <a target="blank" href="https://www.e-laws.gov.on.ca/html/statutes/english/elaws_statutes_90f31_e.htm">Freedom of Information and Protection of Privacy Act (FIPPA)</a>.</p>
-        </div>
-    </div>
-</section>
-
-<?php include '../_includes/global-footer.php'; ?>
-
->>>>>>> origin/master
 </body>
 </html>

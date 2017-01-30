@@ -68,13 +68,14 @@ nav {
         text-decoration: none;
         padding: 0 16px;
       }
-
-      a:hover, &.show-dropdown > a {
-        background-color: $ixblue;
-        color: $white
-      }
     }
   }
+}
+
+nav ul li a:hover,
+nav ul li.show-dropdown > a {
+  background-color: $ixblue;
+  color: $white
 }
 
 .nav-item,
@@ -88,12 +89,12 @@ nav {
   .nav-item a {
     color: $white;
     font-weight: 500;
-
-    &:hover {
-      color: $ixblue;
-      background: $white;
-    }
   }
+}
+.nav-dropdown .nav-item a:hover,
+.nav-dropdown .nav-item a.active {
+  color: $ixblue;
+  background: $white;
 }
 
 /** Desktop-view */
@@ -227,10 +228,14 @@ footer {
   border-top: 2px solid $grey_light;
 }
 
-.footer-nav h4:after{
-  content: " / ";
-  font-size: 30px;
-  color: $grey_light;
+.footer-nav h4 {
+  margin: 0;
+
+  &:after{
+    content: " / ";
+    font-size: 30px;
+    color: $grey_light;
+  }
 }
 
 .footer-nav li:last-child h4:after{
@@ -294,9 +299,37 @@ footer {
       li {
       display: inline-block;
       vertical-align: middle;
-      img {
-        display: inline-block;
+      .labeled{
+        background: #fff
       }
+      // img {
+      //   display: block;
+      //   margin: auto;
+      //   padding: 8px 0;
+      // }
+      }
+    }
+}
+
+.ui.labeled.icon.buttons .button, .ui.labeled.icon.button {
+    position: relative;
+    padding-left: 3em !important;
+    padding-right: 1.5em !important;
+
+    & > .icon {
+      background: none
+    }
+    & > .icon:after, & > .icon:before, & > .icon img {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      text-align: center;
+      transform: translateY(-50%);
+      height: 20px;
+
+      .social-links & {
+        height: 26px;
       }
     }
 }
@@ -306,34 +339,44 @@ footer {
   @include span-columns(12);
   border-top: 2px solid $grey_light;
   padding: 20px 0;
-  @include media($small) {
-    float: none;
-    text-align: center;
-  }
-  p.minor{
-    float: left;
-    text-align: left;
+  position: relative;
     @include media($small) {
-      text-align: center
+      text-align: center;
     }
+  p.minor{
+    display:inline-block;text-align: left;
+      @include media($small) {
+        text-align: center
+      }
   }
 }
 
-#privacy.ui.basic.button{
-  box-shadow:none;
-  color: $ixblue !important;
-  font-weight: 500;
+#privacy.ui.button{
   float: right;
-  @include media($small) {
-    float: none;
-    text-align: center;
+        @include media($small) {
+       display:block;
+       max-width: 180px;
+       margin: auto;
+       float: none
+      }
+}
+
+#map-page .nav-item-map,
+#contribute-page .nav-item-contribute,
+#issues-page .nav-item-learn, #faqs-page .nav-item-learn, #glossary-page .nav-item-learn, #resources-page .nav-item-learn, #supportinglinks-page .nav-item-learn,
+#report-2013-page .nav-item-transparency, #report-2014-page .nav-item-transparency, #report-2016-page .nav-item-transparency {
+  a {
+    background-color: $ixblue;
+    color: $white;
   }
 }
-
-#privacy.ui.basic.button:hover{
-  background: $grey_light !important;
-  text-shadow: none;
+#issues-page .nav-item-issues,
+#faqs-page .nav-item-faqs,
+#glossary-page .nav-item-glossary,
+#resources-page .nav-item-resources,
+#supportinglinks-page .nav-item-supportinglinks {
+  a {
+    color: $ixblue;
+    background: $white;
+  }
 }
-
-
-

@@ -6,7 +6,7 @@
     <?php include '_includes/global-head.php'; ?>
 </head>
 
-<body>
+<body id="news-page">
 <?php include '_includes/global-navigation.php'; ?>
 
 <header class="hero">
@@ -35,10 +35,7 @@
     </article>
 
     <article>
-<<<<<<< HEAD
         <div class="ui compact divider"></div>
-=======
->>>>>>> origin/master
         <h2>2015</h2>
         <ul>
             <li>December 17, 2015 &mdash; IXmaps receives press coverage following our launch with <a href="https://openmedia.ca" target="_blank">OpenMedia.ca</a>. IXmaps made the front page on <a href="https://boingboing.net/2015/12/16/ixmaps-a-tool-to-figure-out-w.html" target="_blank">BoingBoing</a> and was featured in <a href="https://www.theregister.co.uk/2015/12/17/canadian_live_route_map_shows_nsa_spying/" target="_blank">The Register</a> and <a href="http://www.metronews.ca/news/toronto/2015/12/22/university-of-toronto-tool-tracking-digital-spies.html" target="_blank">MetroNews</a>, among others</li>
@@ -53,10 +50,7 @@
     </article>
 
     <article>
-<<<<<<< HEAD
         <div class="ui compact divider"></div>
-=======
->>>>>>> origin/master
         <h2>2014</h2>
         <ul>
             <li>May 30, 2014 &mdash; <strong>Press Release</strong><br />
@@ -68,10 +62,7 @@
     </article>
 
     <article>
-<<<<<<< HEAD
         <div class="ui compact divider"></div>
-=======
->>>>>>> origin/master
         <h2>2013</h2>
         <ul>
             <li>August 30, 2013 &mdash; IXmaps research included on Harvard’s Nieman Lab "<a href="http://www.niemanlab.org/2013/08/whats-new-in-digital-scholarship-reporters-ignoring-technology-the-continuing-power-of-print-and-booze-on-facebook/" target="_blank">What's New in Digital Scholarship</a>" 2013 list</li>
@@ -80,10 +71,7 @@
     </article>
 
     <article>
-<<<<<<< HEAD
         <div class="ui compact divider"></div>
-=======
->>>>>>> origin/master
         <h2>2012</h2>
         <ul>
             <li>October 13, 2012 &mdash; IXmaps is involved in the <a href="http://ontariosciencecentre.ca/Calendar/108/" target="_blank">Ontario Science Centre's Hot Zone</a></li>
@@ -100,10 +88,7 @@
     </article>
 
     <article>
-<<<<<<< HEAD
         <div class="ui compact section divider"></div>
-=======
->>>>>>> origin/master
         <h2>2011</h2>
         <ul>
             <li>May 15, 2011 &mdash; IXmaps is presented at <a href="http://www.digitallymediatedsurveillance.ca/2011-workshop/" target="_blank">Cyber Surveillance in Everyday Life: An International Workshop</a> at the University of Toronto</li>

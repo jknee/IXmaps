@@ -75,7 +75,7 @@
 
 .ui.modal > .header {
   display: block;
-  font-family: $font-family;
+  font-family: $OpenSans;
   background: #FFFFFF;
   margin: 0em;
   padding: 1.25rem 1.5rem;
@@ -270,7 +270,7 @@
     padding: 1rem 0rem !important;
     box-shadow: none;
   }
-  
+
 /* Let Buttons Stack */
   .ui.modal > .actions {
     padding: 1rem 1rem 0rem !important;

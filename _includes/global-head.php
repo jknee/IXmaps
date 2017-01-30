@@ -4,24 +4,14 @@
 
 
     <!-- Semantic UI (via CDN) -->
-<<<<<<< HEAD
-<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">-->
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">-->
 
-=======
-<!--     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
- -->
->>>>>>> origin/master
     <!-- Styles -->
     <link href="/_assets/css/styles.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Work+Sans:500,700,900" rel="stylesheet">
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> origin/master
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>

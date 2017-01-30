@@ -6,14 +6,14 @@
     <?php include '_includes/global-head.php'; ?>
 </head>
 
-<body>
+<body id="home-page">
 <?php include '_includes/global-navigation.php'; ?>
 
 <header class="jumbo-hero">
     <div class="content">
         <h1>Map Your Internet</h1>
         <p class="intro">See how data travels across the internet <br> and the privacy risks it faces along the way</p>
-        <button class="ui huge grey button">Start Mapping</button>
+        <a class="ui massive grey button" href="map.php" target="_self">Start Mapping</a>
     </div>
 </header>
 
@@ -26,31 +26,31 @@
         about  these internet privacy issues:
         </p>
 
-        <a href="#" class="issue-item">
+        <a href="learn/issues.php#issue-one" class="issue-item">
             <div href="#" class="issue">
-                <img class="" src="_assets/img/icn-route.svg">
+                <img src="_assets/img/icn-route.svg">
                 <span>Where on earth does your <strong>personal data travel</strong>?</span>
             </div>
         </a>
 
-        <a href="#" class="issue-item">
+        <a href="learn/issues.php#issue-two" class="issue-item">
             <div href="#" class="issue">
-                <img class="" src="_assets/img/icn-nsa.svg">
+                <img src="_assets/img/icn-nsa.svg">
                 <span>Where can the <strong>NSA intercept</strong> your data en route?</span>
             </div>
         </a>
 
-        <a href="#" class="issue-item">
-            <div href="#" class="issue">
-                <img class="" src="_assets/img/icn-boomerang.svg">
+        <a href="learn/issues.php#issue-three" class="issue-item">
+            <div class="issue">
+                <img src="_assets/img/icn-boomerang.svg">
                 <span>What is <strong>boomerang routing</strong>, and what does it mean for Canadian network sovereignty?</span>
             </div>
         </a>
 
-        <a href="#" class="issue-item">
-            <div href="#" class="issue">
-                <img class="" src="_assets/img/icn-privacy.svg">
-                <span>Which ISPs can access your data and how  <strong>privacy transparent</strong> are the</span>
+        <a href="learn/issues.php#issue-four" class="issue-item">
+            <div class="issue">
+                <img src="_assets/img/icn-privacy.svg">
+                <span>Which ISPs can access your data and how  <strong>privacy transparent</strong> are they?</span>
             </div>
         </a>
     </div>
@@ -59,28 +59,28 @@
 </section>
 
 <section id="database-stats">
-<div class="header">
-    <h4>IXmaps Database Status</h4>
-</header>
+    <header>
+        <h4>IXmaps Database Status</h4>
+    </header>
 
-<div class="content">
-    <div class="stat">
-        <h6>Contributors</h6>
-        644
+    <div class="content">
+        <div class="stat">
+            <h6>Contributors</h6>
+            644
+        </div>
+        <div class="stat">
+            <h6>Destination URLs</h6>
+            3,660
+        </div>
+        <div class="stat">
+            <h6>Traceroutes</h6>
+            111,312
+        </div>
+        <div class="stat">
+            <h6>Latest Contribution</h6>
+            30 Nov 2016
+        </div>
     </div>
-    <div class="stat">
-        <h6>Destination URLs</h6>
-        3,660
-    </div>
-    <div class="stat">
-        <h6>Traceroutes</h6>
-        111,312
-    </div>
-    <div class="stat">
-        <h6>Latest Contribution</h6>
-        30 Nov 2016
-    </div>
-</div>
 </section>
 
 <?php include '_includes/global-footer.php'; ?>

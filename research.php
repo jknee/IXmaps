@@ -6,7 +6,7 @@
     <?php include '_includes/global-head.php'; ?>
 </head>
 
-<body>
+<body id="research-page">
 <?php include '_includes/global-navigation.php'; ?>
 
 <header class="hero">
@@ -37,10 +37,7 @@
     </article>
 
     <article>
-<<<<<<< HEAD
         <div class="ui compact divider"></div>
-=======
->>>>>>> origin/master
         <h2>Presentations</h2>
         <ul>
             <li>Clement, A. "Mass state surveillance and global internet governance."Presented at Global Perspectives China Practice: First International Collaborative Forum on Internet Governance, Beijing. October 22, 2016. <a href="https://dl.dropboxusercontent.com/u/8140293/Public%20talks/2016%20CASS%20global%20internet%20governance%20Oct%2022.pptx" target="_blank">Presentation slides</a> and <a href="https://dl.dropboxusercontent.com/u/8140293/Publications/Clement%202016%20Addressing%20mass%20state%20surveillance%20Dec%2013%20IN%20PRESS.pdf" target="_blank">revised paper</a> available</li>

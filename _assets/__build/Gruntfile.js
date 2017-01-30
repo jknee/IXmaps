@@ -12,6 +12,7 @@ module.exports = function( grunt ) {
 				css: '../__src/css',
 				images: '../__src/img',
 				js: '../__src/js',
+				sui: '../__src/semantic-ui'
 			}
 		},
 
@@ -117,6 +118,12 @@ module.exports = function( grunt ) {
 				expand: true,
 				src: [ '<%= dirs.src.css %>/**.css' ],
 				dest: '<%= dirs.css %>',
+				flatten: true
+			},
+			gathersemanticui: {
+				expand: true,
+				src: [ '<%= dirs.src.sui %>/img/flags.png' ],
+				dest: '<%= dirs.images %>/',
 				flatten: true
 			},
 			srcjs: {

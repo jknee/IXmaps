@@ -48,6 +48,7 @@
 
 // Layout of the Results Section
 .map-holder{
+  border-top:1px solid #ccc;
   min-height: 70vh;
   display: flex;
   flex-direction: row-reverse;
@@ -90,6 +91,7 @@
 .traceroutes-results,
 .carriers-results{
   position: relative;
+  margin-bottom: 40px;
   & h6{
     float: left;
   }
@@ -166,6 +168,46 @@
 }
 
 
+.legend.sidebar{
+  padding: 0 24px;
+  h3{
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .button{
+    text-align: left;
+    margin-bottom: 8px
+  }
+}
+
+
+.legend-item{
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.legend-item p{
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  .minor{
+    font-size:14px;
+    color: #808080
+  }
+}
+
+.legend-item img{
+  float: left;
+  padding-left: 8px;
+  width: auto;
+  height: auto;
+}
+
+
+
+
+
 .map-canvas{
   position: relative;
 }
@@ -176,21 +218,38 @@
   z-index: 2;
 }
 
+.layers-toggle .ui.toggle.button{
+  background: $white;
+  border: 1px solid $ixblue;
+  color: $ixblue;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ui.toggle.buttons .active.button,
+.ui.buttons .button.toggle.active,
+.ui.button.toggle.active,
+.ui.button.toggle.active:hover{
+    background: #C8E3FA  !important;
+    color: $ixblue !important;
+  }
+
 
 
 /* tables */
 
 table.tablesorter thead tr .header {
-  background-image: url(../img/icn-bg.gif);
+  background-image: url("../img/icn-bg.gif");
   background-repeat: no-repeat;
   background-position: center right;
   cursor: pointer;
 }
 table.tablesorter thead tr .headerSortUp {
-  background-image: url(../img/icn-asc.gif);
+  background-image: url("../img/icn-asc.gif");
 }
 table.tablesorter thead tr .headerSortDown {
-  background-image: url(../img/icn-desc.gif);
+  background-image: url("../img/icn-desc.gif");
 }
 table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
 background-color: #eaeaea;
@@ -202,8 +261,6 @@ background-color: #eaeaea;
   position: relative;
 }
 
-
-
 /*// 1. Quick Search*/
 
 .quick-input{
@@ -212,9 +269,21 @@ background-color: #eaeaea;
 }
 .quick-input .button{
   height: 80px;
+  border: 1px solid $ixblue;
+  color: $ixblue;
+  font-weight: 400;
   margin-bottom: $baseline*4;
-}
+  background-image:
+  linear-gradient(
+      #ffffff, #f0f0f0
+    );
 
+}
+.quick-input .button:hover,
+.quick-input .button:active,
+.quick-input .button:focus{
+    background: #f0f0f0;
+  }
 
 /*// 2. Basic Search*/
 .basic.input-holder{
@@ -275,31 +344,36 @@ a.basic-srch-itm:nth-of-type(4){
   flex-flow: row;
 
 }
-.advanced-input{padding: 0 8px;}
-.advanced-input:nth-of-type(1){
-  flex-grow: .75;
+.advanced-input{
+  padding: 4px 8px 24px;
+  flex: 1 1 auto;
+
+  input, textarea, select {
+    margin: 0;
+  }
+  input[type=text], input[type=email], input[type=url], textarea {
+    height: auto;
+    font-size: inherit;
+  }
 }
 
-.advanced-input:nth-of-type(2){
-  flex-grow: 1;
+.advanced-input.constraint-does {
+  flex: 0.75 1 auto;
 }
-
-.advanced-input:nth-of-type(3){
-  flex-grow: 2;
+.advanced-input.constraint-rule {
+  flex: 1 1 auto;
 }
-
-.advanced-input:nth-of-type(4){
-  flex-grow: 3;
+.advanced-input.constraint-property {
+  flex: 2 1 auto;
 }
-
-.advanced-input:nth-of-type(5){
-  flex-grow: 1;
+.advanced-input.constraint-value {
+  flex: 4 1 auto;
 }
-.advanced-input:nth-of-type(6){
-  flex-grow: .5;
+.advanced-input.constraint-boolean {
+  flex: 1 1 auto;
 }
-.advanced-input:nth-of-type(7){
-  flex-grow: .5;
+.advanced-input.constraint-buttons {
+  flex: 0 1 auto;
 }
 
 
@@ -307,3 +381,45 @@ a.basic-srch-itm:nth-of-type(4){
 .ui.form .inline.field > label {
     width: 100px;
 }
+
+i.flag:not(.icon):before {
+  background-image: url("../img/flags.png");
+}
+
+.settings.modal {
+  padding: 24px;
+}
+.settings.modal .setting-title{
+  font-size: 20px;
+  color: $grey;
+}
+
+.settings.modal .actions > .button{
+  margin-left: 0;
+}
+
+.settings.modal .description{
+  text-align: center;
+}
+
+.ui.accordion:not(.styled) .title ~ .content:not(.ui):last-child,
+.settings.modal .accordion .content{
+  text-align: left;
+  padding-bottom: 24px;
+  margin-bottom: 8px;
+  background: $grey_light;
+}
+
+.modal h5{
+  display: inline-block;
+  color: $ixblue
+}
+
+.modal h4{
+  margin: 8px 0 32px 0;
+}
+
+.modal .header img{
+  margin-top: 1em;
+}
+

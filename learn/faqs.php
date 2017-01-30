@@ -2,16 +2,11 @@
 <html>
 <head>
     <meta charset="utf-8">
-<<<<<<< HEAD
     <title>FAQs | IXmaps</title>
-=======
-    <title>IXmaps</title>
->>>>>>> origin/master
     <?php include '../_includes/global-head.php'; ?>
 </head>
 
-<body>
-<<<<<<< HEAD
+<body id="faqs-page">
 <?php include '../_includes/global-navigation.php'; ?>
 
 <header class="hero">
@@ -23,8 +18,10 @@
 <section>
     <div class="content">
     <article>
-            <p class="intro">These FAQs address key questions that arise from the four Themes. They appear in order of the Themes they are most relevant to. </p>
-            <p class="intro">Let us know if you think we’ve missed any important questions, or the answers need to be revised in some way email: IXmaps@ischool.utoronto.ca.</p>
+        <div class="ui section hidden divider"></div>
+        <p class="intro">These FAQs address key questions that arise from the four Themes. They appear in order of the Themes they are most relevant to. </p>
+        <p>Let us know if you think we’ve missed any important questions, or the answers need to be revised in some way email: IXmaps@ischool.utoronto.ca.</p>
+        <div class="ui hidden section divider"></div>
     </article>
     </div>
 </section>
@@ -264,28 +261,5 @@
     .accordion()
     ;
 </script>
-=======
-
-<?php include '../_includes/global-navigation.php'; ?>
-
-<header class="container">
-    <div class="row">
-        <div class="col-6 col-left-3 col-md-8 col-md-left-2 col-sm-10 col-sm-left-1">
-            <h2>FAQs</h2>
-        </div>
-    </div>
-</header>
-
-<section class="container">
-    <div class="row">
-        <div class="col-6 col-left-3 col-md-8 col-md-left-2 col-sm-10 col-sm-left-1">
-
-        </div>
-    </div>
-</section>
-
-<?php include '../_includes/global-footer.php'; ?>
-
->>>>>>> origin/master
 </body>
 </html>

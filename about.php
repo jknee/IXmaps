@@ -6,7 +6,7 @@
     <?php include '_includes/global-head.php'; ?>
 </head>
 
-<body>
+<body id="about-page">
 <?php include '_includes/global-navigation.php'; ?>
 
 <header class="hero">
@@ -18,28 +18,19 @@
 
 <div class="content">
     <article>
-<<<<<<< HEAD
+        <div class="ui hidden section divider"></div>
         <p class="intro">The IXmaps research project is developing an interactive mapping tool aimed at helping internet users and researchers learn about internet routing, focussing particularly on surveillance and privacy issues.</p>
         <p>It does this mainly by encouraging individuals to contribute and map their own internet routes. It also annually reports on the privacy transparency ratings of internet service providers that carry Canadians’ data. It is currently collaborating with <a href="https://openmedia.org/" target="_blank">OpenMedia</a> to facilitate community engagement around <a href="https://openmedia.org/en/ixmaps-see-where-your-data-travels" target="_blank">internet surveillance and privacy issues</a>.</p>
     </article>
 
     <article>
         <div class="ui compact divider"></div>
-=======
-        <p>The IXmaps research project is developing an interactive mapping tool aimed at helping internet users and researchers learn about internet routing, focussing particularly on surveillance and privacy issues. It does this mainly by encouraging individuals to contribute and map their own internet routes. It also annually reports on the privacy transparency ratings of internet service providers that carry Canadians’ data. It is currently collaborating with <a href="https://openmedia.org/" target="_blank">OpenMedia</a> to facilitate community engagement around <a href="https://openmedia.org/en/ixmaps-see-where-your-data-travels" target="_blank">internet surveillance and privacy issues</a>.</p>
-    </article>
-
-    <article>
->>>>>>> origin/master
         <h2>Contact</h2>
        <p>We encourage all feedback from visitors as to what they find interesting, confusing, boring or inaccessible, and welcome helpful suggestions for further refinement. For inquiries, comments or suggestions, please email us at <a href="mailto:ixmaps@utoronto.ca">ixmaps&commat;utoronto.ca</a>.</p>
     </article>
 
     <article>
-<<<<<<< HEAD
             <div class="ui compact divider"></div>
-=======
->>>>>>> origin/master
         <h2>Project Team</h2>
         <ul>
             <li><strong><a href="http://current.ischool.utoronto.ca/faculty/andrew-clement" target="_blank">Andrew Clement</a></strong>, PhD, Professor, Faculty of Information, University of Toronto</li>
@@ -66,18 +57,12 @@
     </article>
 
     <article>
-<<<<<<< HEAD
-            <div class="ui compact divider"></div>
+        <div class="ui compact divider"></div>
         <h2>Funding</h2>
        <p>Beginning in 2008, the project has received funding from <a href="http://www.sshrc-crsh.gc.ca/home-accueil-eng.aspx" target="_blank">Social Sciences and Humanities Research Council of Canada (SSHRC)</a>, <a href="https://www.priv.gc.ca/en/" target="_blank">Office of the Privacy Commissioner of Canada (OPC)</a> and <a href="https://cira.ca/" target="_blank">Canadian Internet Registration Authority (CIRA)</a>. The views expressed herein are those of the author(s) and do not necessarily reflect those of the funders.</p>
        <p>IXmaps is affiliated with the <a href="http://iprp.ischool.utoronto.ca/" target="_blank">Information Policy Research Program and based at the <a href="https://www.ischool.utoronto.ca/" target="_blank">Faculty of Information, University of Toronto</a>.</p>
 
-               <div class="ui hidden section divider"></div>
-=======
-        <h2>Funding</h2>
-       <p>Beginning in 2008, the project has received funding from <a href="http://www.sshrc-crsh.gc.ca/home-accueil-eng.aspx" target="_blank">Social Sciences and Humanities Research Council of Canada (SSHRC)</a>, <a href="https://www.priv.gc.ca/en/" target="_blank">Office of the Privacy Commissioner of Canada (OPC)</a> and <a href="https://cira.ca/" target="_blank">Canadian Internet Registration Authority (CIRA)</a>. The views expressed herein are those of the author(s) and do not necessarily reflect those of the funders.</p>
-       <p>IXmaps is affiliated with the <a href="http://iprp.ischool.utoronto.ca/" target="_blank">Information Policy Research Program and based at the <a href="https://www.ischool.utoronto.ca/" target="_blank">Faculty of Information, University of Toronto</a>.</p>
->>>>>>> origin/master
+        <div class="ui hidden section divider"></div>
     </article>
 </div>
 

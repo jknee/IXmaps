@@ -1,3 +1,31 @@
+// Style the Hero
+.jumbo-hero {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:
+    /* top, transparent blue gradient */
+    linear-gradient(
+      rgba(0, 129, 194, 0.8),
+      rgba(0, 71, 138, 0.8)
+    ),
+    /* bottom, image */
+    url('/_assets/img/electronics-board.jpg');
+}
+
+.jumbo-hero .content{
+    text-align: center;
+    color: $white;
+}
+
+#home-page h1{
+  margin-bottom: 24px;
+}
+
+
+// Style the Issues Section
 .issue-summary-holder{
   background: $page;
   padding: $baseline*6 0;
@@ -7,6 +35,19 @@
 .issue-summary{
   @include span-columns(8);
   @include shift(2);
+
+  @include media($medium){
+      @include shift(0);
+      @include span-columns(12);
+  }
+  @include media($small){
+      @include shift(0);
+      @include span-columns(12);
+  }
+  @include media($mobile){
+      @include shift(0);
+      @include span-columns(2);
+  }
 }
 
 .issue{
@@ -21,6 +62,10 @@
   background: #ffffff;
 }
 
+.issue span{
+  padding-left: 24px;
+  border-left: 2px solid #eee;
+}
 .issue-item:hover .issue{
     box-shadow: 0 0 8px rgba(0,0,0,.50);
     border-color: $ixblue
@@ -33,19 +78,11 @@
 .issue img{
   float: right;
   padding-right: 24px;
-  margin-right: 24px;
-  border-right: 2px solid #eee;
   width: 60px;
   height: 60px;
-
 }
 
-
-
-
-
-
-
+// Style the Database Stats Section
 #database-stats{
   background: $grey_dark;
   text-align: center;
@@ -76,10 +113,15 @@
     font-size: 30px;
     color: $ixblue;
     border-right: 2px dotted #444;
+    @include media($medium){
+        @include span-columns(12);
+        margin-bottom: 40px;
+        border-botttm: 2px dotted #444;
+        border-right: none;
+    }
 }
 .stat:last-child{
-border-right: none;
+  border-right: none;
 }
-
 
 

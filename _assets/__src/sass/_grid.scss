@@ -29,28 +29,3 @@ $default: new-breakpoint(min-width $default-min);
 .cf {@include clearfix;}
 
 
-// @mixin build-columns($bp: '') {
-// 	@if ($bp != '') {
-// 		$bp: "-#{$bp}";
-// 	}
-// 	@for $i from 1 through $grid-columns {
-// 		.col#{$bp}-#{$i} {
-// 			@include span-columns($i);
-// 		}
-// 		@if ($i < $grid-columns) {
-// 			.col#{$bp}-left-#{$i} {
-// 				@include shift($i);
-// 			}
-// 			.col#{$bp}-right-#{$i} {
-// 				@include shift(-$i);
-// 			}
-// 		}
-// 	}
-// }
-
-// @include media($mobile) {@include build-columns('mob');}
-// @include media($small) {@include build-columns('sm');}
-// @include media($medium) {@include build-columns('md');}
-// @include media($default) {@include build-columns;}
-
-

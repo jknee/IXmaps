@@ -9,6 +9,7 @@
       <h6>Traceroutes</h6>
       <button class="ui compact transparent basic right floated yellow button">Map All</button>
       <button class="ui compact transparent basic right floated yellow button">Hide All</button>
+      <div class="ui compact hidden divider"></div>
   </div>
 
    <table id="traceroutes-table" class="ui tablesorter selectable celled compact table"">

@@ -102,6 +102,7 @@
  */
 
 (function ($) {
+
     $.extend({
         tablesorter: new
         function () {

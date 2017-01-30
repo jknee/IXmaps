@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="30px" viewBox="0 0 25 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M24.1324042,0 L0.570285279,0 C0.324041812,0.0774901669 0.156794425,0.317340683 0.156794425,0.589190487 L0.156794425,18.1710123 C0.156794425,23.610084 7.98720601,28.4464736 12.1800414,29.8289582 C12.2357905,29.8474082 12.295024,29.855999 12.3519164,29.855999 C12.4088088,29.855999 12.46924,29.8474082 12.5237914,29.8289582 C16.715429,28.4476267 24.5470383,23.6100263 24.5470383,18.1709546 L24.5470383,0.589190487 C24.545895,0.317340683 24.3774499,0.0774901669 24.1324042,0 Z" id="path-1"></path>
+    </defs>
+    <g id="Map" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Map---Quick" transform="translate(-270.000000, -251.000000)">
+            <g id="1-/-QUICK" transform="translate(43.000000, 106.000000)">
+                <g id="2---NSA" transform="translate(176.000000, 131.000000)">
+                    <g id="Group-2" transform="translate(51.000000, 14.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Shape"></g>
+                        <path d="M1.2195122,3.6 L1.2195122,31.2" id="Line-Copy-2" stroke="#2289E4" stroke-width="1.2" stroke-linecap="square" mask="url(#mask-2)"></path>
+                        <path d="M3.65853659,3.6 L3.65853659,31.2" id="Line-Copy-3" stroke="#2289E4" stroke-width="1.2" stroke-linecap="square" mask="url(#mask-2)"></path>
+                        <path d="M6.09756098,3.6 L6.09756098,31.2" id="Line-Copy-4" stroke="#2289E4" stroke-width="1.2" stroke-linecap="square" mask="url(#mask-2)"></path>
+                        <path d="M8.53658537,3.6 L8.53658537,31.2" id="Line-Copy-5" stroke="#2289E4" stroke-width="1.2" stroke-linecap="square" mask="url(#mask-2)"></path>
+                        <path d="M18.2926829,3.6 L18.2926829,31.2" id="Line-Copy-15" stroke="#2289E4" stroke-width="1.2" stroke-linecap="square" mask="url(#mask-2)"></path>
+                        <path d="M20.7317073,3.6 L20.7317073,31.2" id="Line-Copy-14" stroke="#2289E4" stroke-width="1.2" stroke-linecap="square" mask="url(#mask-2)"></path>
+                        <path d="M23.1707317,3.6 L23.1707317,31.2" id="Line-Copy-13" stroke="#2289E4" stroke-width="1.2" stroke-linecap="square" mask="url(#mask-2)"></path>
+                        <path d="M15.8536585,3.6 L15.8536585,31.2" id="Line-Copy-11" stroke="#2289E4" stroke-width="1.2" stroke-linecap="square" mask="url(#mask-2)"></path>
+                        <path d="M13.4146341,3.6 L13.4146341,31.2" id="Line-Copy-10" stroke="#2289E4" stroke-width="1.2" stroke-linecap="square" mask="url(#mask-2)"></path>
+                        <path d="M10.9756098,3.6 L10.9756098,31.2" id="Line-Copy-9" stroke="#2289E4" stroke-width="1.2" stroke-linecap="square" mask="url(#mask-2)"></path>
+                        <rect id="Rectangle-2" fill="#1C6FB8" mask="url(#mask-2)" x="-1.77635684e-15" y="0" width="25" height="5.96999989"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

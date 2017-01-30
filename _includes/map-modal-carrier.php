@@ -1,33 +1,81 @@
 <div class="ui carrier modal">
-  <i class="close icon"></i>
+  <div class="header">
+    <h5>Carrier Transparency and Privacy Report</h5>
+    <i><img class="ui image right floated" src="/_assets/img/icn-close.svg" alt=""></i>
+  </div>
+
+
   <div class="content">
-      Your current IP address is xxx.xxx.xxxx
-      You appear to be near Toronto, Ontario
-      Your internet service provider (ISP) is Rogers.
+  <h4>Rogers</h4>
+
+  <table class="ui structured table">
+      <thead>
+        <tr>
+          <th rowspan="2">Criteria</th>
+          <th colspan="2">Score</th>
+        </tr>
+        <tr>
+          <th>2016</th>
+          <th>2014</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+          <td>1. A public commitment to PIPEDA2 compliance.</td>
+          <td><div class="ui huge star rating" data-rating="1" data-max-rating="1""></div></td>
+          <td><div class="ui mini star rating" data-rating="1" data-max-rating="1""></div></td>
+          </tr>
+
+          <tr>
+            <td>2. A public commitment to inform users about all tdird party data requests.</td>
+            <td><div class="ui huge star rating" data-rating="1" data-max-rating="1""></div></td>
+            <td><div class="ui mini star rating" data-rating="1" data-max-rating="1""></div></td>
+          </tr>
+          <tr>
+            <td>3. Transparency about frequency of tdird party data requests and disclosures.</td>
+            <td><div class="ui huge star rating" data-rating="1" data-max-rating="1""></div></td>
+            <td><div class="ui mini star rating" data-rating="1" data-max-rating="1""></div></td>
+          </tr>
+          <tr>
+            <td>4. Transparency about conditions for tdird party data disclosures.</td>
+            <td><div class="ui huge star rating" data-rating="1" data-max-rating="1""></div></td>
+            <td><div class="ui mini star rating" data-rating="1" data-max-rating="1""></div></td>
+          </tr>
+          <tr>
+            <td>5. An explicitly inclusive definition of ‘personal information’.</td>
+            <td><div class="ui huge star rating" data-rating="1" data-max-rating="1""></div></td>
+            <td><div class="ui mini star rating" data-rating="1" data-max-rating="1""></div></td>
+          </tr>
+          <tr>
+            <td>6. The normal retention period for personal information.</td>
+            <td><div class="ui huge star rating" data-rating="1" data-max-rating="1""></div></td>
+            <td><div class="ui mini star rating" data-rating="1" data-max-rating="1""></div></td>
+          </tr>
+          <tr>
+            <td>7. Transparency about where personal information is is stored and/or processed.</td>
+            <td><div class="ui huge star rating" data-rating="1" data-max-rating="1""></div></td>
+            <td><div class="ui mini star rating" data-rating="1" data-max-rating="1""></div></td>
+          </tr>
+          <tr>
+            <td>8. Transparency about where personal information is routed.</td>
+            <td><div class="ui huge star rating" data-rating="1" data-max-rating="1""></div></td>
+            <td><div class="ui mini star rating" data-rating="1" data-max-rating="1""></div></td>
+          </tr>
+          <tr>
+            <td>9. Domestic Canadian routing where possible.</td>
+            <td><div class="ui huge star rating" data-rating="1" data-max-rating="1""></div></td>
+            <td><div class="ui mini star rating" data-rating="1" data-max-rating="1""></div></td>
+          </tr>
+          <tr>
+            <td>10. Open advocacy for user privacy rights.</td>
+            <td><div class="ui huge star rating" data-rating="1" data-max-rating="1""></div></td>
+            <td><div class="ui mini star rating" data-rating="1" data-max-rating="1""></div></td>
+          </tr>
+      </tbody>
+    </table>
+
+      <p><a href="#" class="link">View the full transparency report</a></p>
+
   </div>
-    <div class="description">
-      Please review and correct as needed.
 
-
-            <div class="ui accordion">
-                <div class="title">
-                    <i class="dropdown icon"></i>
-                    <strong>Find this creepy?</strong>
-                </div>
-
-                <div class="content">
-                    <p>Every website you visit, and all the carriers along the way, needs the IP address of your device to transmit your data and return content. Using commonly available IP address lookup services, any of these can determine your approximate location. These service providers can also capture your communications, and are largely unfettered in using it for their own purposes. They can also secretly hand it over to third parties, including law enforcement and security agencies. With IXmaps, we only use your IP address only to produce these maps and then anonymize it. For more, see our privacy policy.</p>
-                </div>
-            </div>
-
-
-
-  </div>
-
-
-
-
-  <div class="actions">
-    <div class="ui button">GO TO MAP</div>
-  </div>
 </div>

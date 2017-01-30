@@ -9,20 +9,19 @@
 <body id="map-page">
 <?php include '_includes/global-navigation.php'; ?>
 
-<<<<<<< HEAD
+
 <?php include '_includes/map-modal-settings.php'; ?>
 <?php include '_includes/map-modal-carrier.php'; ?>
 <?php include '_includes/map-modal-router.php'; ?>
 <?php include '_includes/map-modal-traceroute.php'; ?>
 
-<button id="settings_modal">OPENING MODAL</button>
+
+<!-- <button id="settings_modal">OPENING MODAL</button>
 <button id="router_modal">ROUTER POP UP</button>
 <button id="carrier_modal">CARRIER POP UP</button>
-<button id="traceroutes_modal">TR DETAILS</button>
+<button id="traceroutes_modal">TR DETAILS</button> -->
 
 
-=======
->>>>>>> origin/master
 <!-- SEARCH AREA -->
 <?php include '_includes/map-search.php'; ?>
 
@@ -38,29 +37,28 @@
     <!-- GOOGLE MAPS -->
     <div class="map-canvas pusher">
       <div class="layers-toggle">
-        <button class="ui toggle button">Layers</button>
+        <button class="ui toggle button">
+          <i class="ui image left floated">
+            <img src="/_assets/img/icn-layers.svg" alt="delete">
+          </i>
+          1 Layers
+        </button>
       </div>
       <div id="map"></div>
     </div>
 
 </div>
 
-
-
-
 </body>
 
 <?php include '_includes/global-footer.php'; ?>
 
-
-<!-- Semantic UI :: Tabs & Tables  -->
-<script type="text/javascript" src="_assets/js/tablesorter.js"></script>
+<script src="_assets/js/tablesorter.js"></script>
 
 <script>
   $('.top.menu .item').tab();
   $("table").tablesorter({});
   $('.ui.rating').rating('disable');
-<<<<<<< HEAD
 
   $("#settings_modal").click(function(){
     $('.settings.modal').modal('show');
@@ -78,8 +76,6 @@
     $('.carrier.modal').modal('show');
   });
 
-=======
->>>>>>> origin/master
   $('a.from.basic-srch-itm')
     .popup({
       popup: '.from.popup',
@@ -102,21 +98,26 @@
     })
   ;
   $('.ui.sidebar')
-    .sidebar({context:$('.map-holder')})
+    .sidebar({
+      context : $('.map-holder'),
+      dimPage : false,
+      closable : false // If this is set to true (the default value) clicking anywhere else on the page will close the overlay. Remove this line if that behaviour is desired.
+    })
     .sidebar('setting', 'transition', 'overlay', 'toggle')
     .sidebar('attach events', '.map-holder .layers-toggle .toggle.button')
   ;
-<<<<<<< HEAD
   $('.ui.accordion')
     .accordion()
   ;
-=======
->>>>>>> origin/master
+  $('.toggle.button')
+    .state({
+    })
+  ;
 </script>
 
 
 <!-- Google Maps API  -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
 
 <!-- Snazzy Maps  -->
 <script type="text/javascript">
