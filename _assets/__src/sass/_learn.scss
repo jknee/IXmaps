@@ -1,7 +1,14 @@
 // Issues
-.issue-section.ui.styled.accordion{
+.issue-section .ui.styled.accordion{
   border-bottom: 1px solid $grey_dark;
 }
+
+.issue-section .ui.styled.accordion .title{
+  &.active{
+    background: $grey_dark
+  }
+}
+
 
 .ui.styled.accordion{
   border-radius: 0;
@@ -47,7 +54,9 @@
   color: $white;
   padding: 24px 0 16px 0;
 }
-
+.ui.accordion:not(.styled) .title ~ .content:not(.ui):last-child{
+  background: $grey;
+}
 .issue-header{
   text-align: center;
   padding: 16px 0 24px;

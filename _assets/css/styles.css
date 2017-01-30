@@ -26321,7 +26321,6 @@ i.flag:not(.icon):before {
 	text-align: center;
 }
 
-.ui.accordion:not(.styled) .title ~ .content:not(.ui):last-child,
 .settings.modal .accordion .content {
 	text-align: left;
 	padding-bottom: 24px;
@@ -26342,8 +26341,12 @@ i.flag:not(.icon):before {
 	margin-top: 1em;
 }
 
-.issue-section.ui.styled.accordion {
+.issue-section .ui.styled.accordion {
 	border-bottom: 1px solid #191C1F;
+}
+
+.issue-section .ui.styled.accordion .title.active {
+	background: #191C1F;
 }
 
 .ui.styled.accordion {
@@ -26387,6 +26390,10 @@ i.flag:not(.icon):before {
 	text-align: left;
 	color: #ffffff;
 	padding: 24px 0 16px 0;
+}
+
+.ui.accordion:not(.styled) .title ~ .content:not(.ui):last-child {
+	background: #2D3A47;
 }
 
 .issue-header {
